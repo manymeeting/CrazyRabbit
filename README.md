@@ -16,9 +16,9 @@ To build, be sure you have [node](http://nodejs.org) installed. Clone the projec
 
     git clone https://github.com/nguyensjsu/cmpe202-diablo.git
 
-~~Then in the cloned directory, simply run:
+~~Then in the cloned directory, simply run:~~
 
-    npm install~~
+    ~~npm install~~
 
 You must have `grunt-cli` installed globally:
 
