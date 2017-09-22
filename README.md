@@ -18,13 +18,13 @@ To build, be sure you have [node](http://nodejs.org) installed. Clone the projec
 
 ~~Then in the cloned directory, simply run:~~
 
-    ~~npm install~~
+~~    npm install~~
 
 You must have `grunt-cli` installed globally:
 
     npm install -g grunt-cli
 
-Running the game:
+In the cloned directory, run the game:
 
 	grunt serve
 
