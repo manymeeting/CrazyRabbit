@@ -18,9 +18,9 @@ To build, be sure you have [node](http://nodejs.org) installed. Clone the projec
 
 Then in the cloned directory, simply run:
 
-    npm install
+    -npm install-
 
-You must also have `grunt-cli` installed globally:
+You must have `grunt-cli` installed globally:
 
     npm install -g grunt-cli
 
