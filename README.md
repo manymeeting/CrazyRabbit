@@ -1,4 +1,4 @@
-Diablo Team Peoject
+Diablo Team Project
 -------------------------------------------------------------------------------
 
 features :
