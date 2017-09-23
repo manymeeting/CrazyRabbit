@@ -10,7 +10,7 @@ features :
 - distribution build
 - standalone build for desktop operating systems
 
-## To run distribution
+## To build the development environment
 
 To build, be sure you have [node](http://nodejs.org) installed. Clone the project:
 
