@@ -1,6 +1,10 @@
 # OS X
 .DS_Store
 
+#intelliJ
+.idea/
+*.iml
+
 #nodejs
 node_modules/
 app/vendor/
