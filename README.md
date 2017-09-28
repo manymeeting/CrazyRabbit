@@ -16,7 +16,7 @@ To build, be sure you have [node](http://nodejs.org) installed. Clone the projec
 
     git clone https://github.com/nguyensjsu/cmpe202-diablo.git
 
-Switch to the your operating branch:
+Switch to your operating branch:
 
     git checkout [branch name]
 
