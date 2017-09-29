@@ -69,7 +69,7 @@ game.PlayerEntity = me.Entity.extend({
         if (!this.body.jumping && !this.body.falling) {
           // set current vel to the maximum defined value
           // gravity will then do the rest
-          this.body.vel.y = -this.body.maxVel.y * 3 * me.timer.tick;
+          this.body.vel.y = -this.body.maxVel.y * me.timer.tick;
 
           // set the jumping flag
           this.body.jumping = true;
