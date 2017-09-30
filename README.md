@@ -71,7 +71,10 @@ Copyright (C) 2011 - 2015 Olivier Biot, Jason Oster, Aaron McLeod,
 Modified work Copyright 2017 Team Diablo.
 melonJS is licensed under the [MIT License](http://www.opensource.org/licenses/mit-license.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> parent of 453ebc5... Adam's WorkSpace
 =======
 >>>>>>> parent of 453ebc5... Adam's WorkSpace
