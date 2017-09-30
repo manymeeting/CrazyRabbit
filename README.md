@@ -1,11 +1,6 @@
 Diablo Team Project
 -------------------------------------------------------------------------------
 
-
-------------This part is for Adam Ke -----------
-
-
-
 features :
 - video autoscaling
 - mobile optimized HTML/CSS
@@ -69,3 +64,5 @@ Modified work Copyright 2017 Team Diablo.
 melonJS is licensed under the [MIT License](http://www.opensource.org/licenses/mit-license.php)
 
 
+
+This part is for Adam Ke -----------
