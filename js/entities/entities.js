@@ -221,7 +221,7 @@ game.EnemyEntity = me.Entity.extend({
         this.body.vel.x += (this.walkLeft) ? -this.body.accel.x * me.timer.tick : this.body.accel.x * me.timer.tick;
         }
         else {
-            is.body.vel.x = 0;
+            this.body.vel.x = 0;
         }
 
         // update the body movement
