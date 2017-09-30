@@ -1,20 +1,6 @@
 Diablo Team Project
 -------------------------------------------------------------------------------
 
-<<<<<<< HEAD
-=======
-
-------------This part is for Adam Ke -----------
-
-
-<blockquote class="twitter-tweet" data-lang="zh-cn"><p lang="en" dir="ltr">Google: 90% of our engineers use the software you wrote (Homebrew), but you can’t invert a binary tree on a whiteboard so fuck off.</p>&mdash; Max Howell (@mxcl) <a href="https://twitter.com/mxcl/status/608682016205344768?ref_src=twsrc%5Etfw">2015年6月10日</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of fa655c2... Update README.md
-
->>>>>>> parent of fa655c2... Update README.md
 features :
 - video autoscaling
 - mobile optimized HTML/CSS
@@ -76,16 +62,3 @@ Note that you may have to edit the file `Gruntfile.js` if you need to better dic
 Copyright (C) 2011 - 2015 Olivier Biot, Jason Oster, Aaron McLeod,
 Modified work Copyright 2017 Team Diablo.
 melonJS is licensed under the [MIT License](http://www.opensource.org/licenses/mit-license.php)
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-<<<<<<< HEAD
-=======
->>>>>>> parent of 453ebc5... Adam's WorkSpace
-=======
->>>>>>> parent of 453ebc5... Adam's WorkSpace
-=======
-
-This part is for Adam Ke -----------
->>>>>>> parent of d8f69e6... Update README.md
