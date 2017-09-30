@@ -1,11 +1,6 @@
 Diablo Team Project
 -------------------------------------------------------------------------------
 
-
-------------This part is for Adam Ke -----------
-
-
-
 features :
 - video autoscaling
 - mobile optimized HTML/CSS
@@ -71,7 +66,12 @@ melonJS is licensed under the [MIT License](http://www.opensource.org/licenses/m
 <<<<<<< HEAD
 
 
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 453ebc5... Adam's WorkSpace
 =======
 >>>>>>> parent of 453ebc5... Adam's WorkSpace
+=======
+
+This part is for Adam Ke -----------
+>>>>>>> parent of d8f69e6... Update README.md
