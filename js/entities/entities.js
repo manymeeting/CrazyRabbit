@@ -210,10 +210,10 @@ game.EnemyEntity = me.Entity.extend({
 
         if (this.alive) {
         if (this.walkLeft && this.pos.x <= this.startX) {
-            is.walkLeft = false;
+            this.walkLeft = false;
         }
         else if (!this.walkLeft && this.pos.x >= this.endX) {
-            is.walkLeft = true;
+            this.walkLeft = true;
         }
 
         // make it walk
