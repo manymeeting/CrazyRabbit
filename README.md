@@ -6,7 +6,7 @@ Diablo Team Project
 
 
 <blockquote class="twitter-tweet" data-lang="zh-cn"><p lang="en" dir="ltr">Google: 90% of our engineers use the software you wrote (Homebrew), but you can’t invert a binary tree on a whiteboard so fuck off.</p>&mdash; Max Howell (@mxcl) <a href="https://twitter.com/mxcl/status/608682016205344768?ref_src=twsrc%5Etfw">2015年6月10日</a></blockquote>
-
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 features :
