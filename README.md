@@ -62,7 +62,3 @@ Note that you may have to edit the file `Gruntfile.js` if you need to better dic
 Copyright (C) 2011 - 2015 Olivier Biot, Jason Oster, Aaron McLeod,
 Modified work Copyright 2017 Team Diablo.
 melonJS is licensed under the [MIT License](http://www.opensource.org/licenses/mit-license.php)
-
-
-
-This part is for Adam Ke -----------
