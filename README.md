@@ -14,25 +14,29 @@
 - Agile Practices Team is Adopting: Kanban -> Scrum
  
 ## Weekly Meeting Minutes
+### Date: 10/21/2017
+### Time: 6pm - 8pm
+#### 1. What did we do last week?
+    - Added different character appearances for main character
+    - Designed more items to be added to stage1 map
+#### 2. What is the team going to do next week?
+    - Combine all elements to stage 1 and make it playable
+    - Continue Refactoring code to enhance extensibility
+#### 3. What are the current blockers/challenges our team is facing?
+    - Team members are getting busy
+    - Adopt Scrum practices
+    
 ### Date: 10/14/2017
 ### Time: 6pm - 8pm
 #### 1. What did we do last week?
-    - Defined the alignment of stage1 map
-    - Finished all collision settings of map of stage 1.
-    - Redesigned the main character: a rabbit
-    - Designed character's action: using carrot as weapons
+    - Dicided all the actions and movements of main character
+    - Designed the weapon of main character
 #### 2. What is the team going to do next week?
-    - Discuss out all the actions and movements of main character
-    - Design the first complete map in the game.
+    - Develop more map elements for stage 1
+    - Refactor code to enhance extensibility
 #### 3. What are the current blockers/challenges our team is facing?
-    - How to deal with resolution (full-screen if possible, or use original).
-    - A blue print of the game story
-    - Which design pattern(s) should be implemented in this project.
-#### 4. Dashboard:
-    - Link to Task Board (Stories + Defn. of Done):
-    - Link to Cumulative Flow Diagram (Team's Google Sheet):
-      https://docs.google.com/spreadsheets/d/1WfpNNYRP3rYvUrdJ_wghL1T1OJrEb-SbJs0QuJBMSXY/edit#gid=2
-    - Agile Practices Team is Adopting: Kanban
+    - We are short of designers
+    - Get ready to switch from Kanban to Scrum
     
 ### Date: 10/07/2017
 ### Time: 6pm - 8pm
@@ -48,11 +52,6 @@
     - How to deal with resolution (full-screen if possible, or use original).
     - A blue print of the game story
     - Which design pattern(s) should be implemented in this project.
-#### 4. Dashboard:
-    - Link to Task Board (Stories + Defn. of Done):
-    - Link to Cumulative Flow Diagram (Team's Google Sheet):
-      https://docs.google.com/spreadsheets/d/1WfpNNYRP3rYvUrdJ_wghL1T1OJrEb-SbJs0QuJBMSXY/edit#gid=2
-    - Agile Practices Team is Adopting: Kanban
 
 ### Date: 09/23/2017
 ### Time: 3pm - 5pm
@@ -67,12 +66,6 @@
     - How to deal with resolution (full-screen if possible, or use original).
     - How to make the maps "crazy".
     - Which design pattern(s) should be implemented in this project.
-#### 4. Dashboard:
-    - Link to Task Board (Stories + Defn. of Done):
-    - Link to Cumulative Flow Diagram (Team's Google Sheet):
-      https://docs.google.com/spreadsheets/d/1WfpNNYRP3rYvUrdJ_wghL1T1OJrEb-SbJs0QuJBMSXY/edit#gid=2
-    - Agile Practices Team is Adopting: Kanban
-   
 
 ### Date: 09/17/2017
 ### Time: 3pm - 4pm
@@ -92,12 +85,6 @@
     - How to deal with resolution (full-screen if possible, or use original).
     - How many levels of map should be included in the game.
     - Which design pattern(s) should be implemented in this project.
-#### 4. Dashboard:
-    - Link to Task Board (Stories + Defn. of Done):
-    - Link to Cumulative Flow Diagram (Team's Google Sheet):
-      https://docs.google.com/spreadsheets/d/1WfpNNYRP3rYvUrdJ_wghL1T1OJrEb-SbJs0QuJBMSXY/edit#gid=2
-    - Agile Practices Team is Adopting: Kanban
-
 
 ## Documentation of Crazy Mario
 ### Features
