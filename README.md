@@ -3,6 +3,14 @@ Diablo Team Project
 # Team Name: cmpe202-diablo
 ## Team Member Names: Mutian Wang, Zihan Ke, Weiyu Jin, Ruifeng Sheng, Xiaoran Lin
 
+#####DashBoard:
+1.Link to Task Board (Stories + Defn. of Done):
+  <https://github.com/nguyensjsu/cmpe202-diablo/projects/1>
+2.Link to Cumulative Flow Diagram (Team's Google Sheet):
+  <https://docs.google.com/spreadsheets/d/1WfpNNYRP3rYvUrdJ_wghL1T1OJrEb-SbJs0QuJBMSXY/edit#gid=2>
+3.Agile Practices Team is Adopting: Kanban
+  
+
 ## Oct 14th. Weekly Meeting Minutes
 ### Date: 10/04/2017
 ### Time: 6pm - 8pm
@@ -24,8 +32,6 @@ Diablo Team Project
       https://docs.google.com/spreadsheets/d/1WfpNNYRP3rYvUrdJ_wghL1T1OJrEb-SbJs0QuJBMSXY/edit#gid=2
     - Agile Practices Team is Adopting: Kanban
     
-######## 
-我先试试好不好使   
     
 ## Oct 7th. Weekly Meeting Minutes
 ### Date: 10/07/2017
