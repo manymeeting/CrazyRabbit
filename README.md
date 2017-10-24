@@ -1,29 +1,32 @@
-Diablo Team Project
--------------------------------------------------------------------------------
-# Team Name: cmpe202-diablo
-## Team Member Names: Mutian Wang, Zihan Ke, Weiyu Jin, Ruifeng Sheng, Xiaoran Lin
+# Diablo Team Project
 
-## DashBoard:
-    - 1.Link to Task Board (Stories + Defn. of Done):     
-<https://github.com/nguyensjsu/cmpe202-diablo/projects/1> <br/>
-    
-    - 2.Link to Cumulative Flow Diagram (Team's Google Sheet):  
+----------
+Team Name: cmpe202-diablo
+Team Member Names: Mutian Wang, Zihan Ke, Weiyu Jin, Ruifeng Sheng, Xiaoran Lin
+
+----------
+
+
+## Progress Overview:
+- Link to Task Board (Stories + Defn. of Done):     
+<https://github.com/nguyensjsu/cmpe202-diablo/projects/1>
+
+- Link to Cumulative Flow Diagram (Team's Google Sheet):
 <https://docs.google.com/spreadsheets/d/1WfpNNYRP3rYvUrdJ_wghL1T1OJrEb-SbJs0QuJBMSXY/edit#gid=2>
-    
-    - 3.Agile Practices Team is Adopting: Kanban
-  
 
-## Oct 14th. Weekly Meeting Minutes
-### Date: 10/04/2017
+- Agile Practices Team is Adopting: Kanban -> Scrum
+ 
+## Weekly Meeting Minutes
+### Date: 10/14/2017
 ### Time: 6pm - 8pm
 #### 1. What did we do last week?
     - Defined the alignment of stage1 map
     - Finished all collision settings of map of stage 1.
     - Redesigned the main character: a rabbit
-    - Designed character's action: using carrot as weapons
+    - Designed character's action: using carrot as weapons
 #### 2. What is the team going to do next week?
-    - Discuss out all the actions and movements of main character
-    - Design the first complete map in the game.
+    - Discuss out all the actions and movements of main character
+    - Design the first complete map in the game.
 #### 3. What are the current blockers/challenges our team is facing?
     - How to deal with resolution (full-screen if possible, or use original).
     - A blue print of the game story
@@ -34,18 +37,16 @@ Diablo Team Project
       https://docs.google.com/spreadsheets/d/1WfpNNYRP3rYvUrdJ_wghL1T1OJrEb-SbJs0QuJBMSXY/edit#gid=2
     - Agile Practices Team is Adopting: Kanban
     
-    
-## Oct 7th. Weekly Meeting Minutes
 ### Date: 10/07/2017
 ### Time: 6pm - 8pm
 #### 1. What did we do last week?
     - Defined the alignment of stage1 map
     - Finished all collision settings of map of stage 1.
     - Redesigned the main character: a rabbit
-    - Designed character's action: using carrot as weapons
+    - Designed character's action: using carrot as weapons
 #### 2. What is the team going to do next week?
-    - Discuss out all the actions and movements of main character
-    - Design the first complete map in the game.
+    - Discuss out all the actions and movements of main character
+    - Design the first complete map in the game.
 #### 3. What are the current blockers/challenges our team is facing?
     - How to deal with resolution (full-screen if possible, or use original).
     - A blue print of the game story
@@ -56,7 +57,6 @@ Diablo Team Project
       https://docs.google.com/spreadsheets/d/1WfpNNYRP3rYvUrdJ_wghL1T1OJrEb-SbJs0QuJBMSXY/edit#gid=2
     - Agile Practices Team is Adopting: Kanban
 
-## Sep 30th. Weekly Meeting Minutes
 ### Date: 09/23/2017
 ### Time: 3pm - 5pm
 #### 1. What did we do last week?
@@ -77,8 +77,6 @@ Diablo Team Project
     - Agile Practices Team is Adopting: Kanban
    
 
-
-## Sep 23th. Weekly Meeting Minutes
 ### Date: 09/17/2017
 ### Time: 3pm - 4pm
 #### 1. What did we do last week?
@@ -104,8 +102,8 @@ Diablo Team Project
     - Agile Practices Team is Adopting: Kanban
 
 
-## Crazy Mario:   
-### features :
+## Documentation of Crazy Mario
+### Features
 - video autoscaling
 - mobile optimized HTML/CSS
 - swiping disabled on iOS devices
@@ -114,7 +112,7 @@ Diablo Team Project
 - distribution build
 - standalone build for desktop operating systems
 
-### To build the development environment
+### Installation
 
 To build, be sure you have [node](http://nodejs.org) installed. Clone the project:
 
