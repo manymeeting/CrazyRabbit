@@ -1,10 +1,7 @@
 # Diablo Team Project
+- Team Name: cmpe202-diablo
 
-----------
-Team Name: cmpe202-diablo
-Team Member Names: Mutian Wang, Zihan Ke, Weiyu Jin, Ruifeng Sheng, Xiaoran Lin
-
-----------
+- Team Member Names: Mutian Wang, Zihan Ke, Weiyu Jin, Ruifeng Sheng, Xiaoran Lin
 
 
 ## Progress Overview:
@@ -143,8 +140,6 @@ To build:
     grunt
 
 This will create a `build` directory containing the files that can be uploaded to a server, or packaged into a mobile app.
-
-----
 
 Building a standalone desktop release:
 
