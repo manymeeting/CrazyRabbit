@@ -24,7 +24,7 @@ Diablo Team Project
       https://docs.google.com/spreadsheets/d/1WfpNNYRP3rYvUrdJ_wghL1T1OJrEb-SbJs0QuJBMSXY/edit#gid=2
     - Agile Practices Team is Adopting: Kanban
     
-    
+########    
     
 ## Oct 7th. Weekly Meeting Minutes
 ### Date: 10/07/2017
