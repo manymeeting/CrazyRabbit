@@ -4,10 +4,10 @@ Diablo Team Project
 ## Team Member Names: Mutian Wang, Zihan Ke, Weiyu Jin, Ruifeng Sheng, Xiaoran Lin
 
 ## DashBoard:
-    - 1.Link to Task Board (Stories + Defn. of Done):
-    - <https://github.com/nguyensjsu/cmpe202-diablo/projects/1>
-    - 2.Link to Cumulative Flow Diagram (Team's Google Sheet):
-    - <https://docs.google.com/spreadsheets/d/1WfpNNYRP3rYvUrdJ_wghL1T1OJrEb-SbJs0QuJBMSXY/edit#gid=2>
+    - 1.Link to Task Board (Stories + Defn. of Done):     
+<https://github.com/nguyensjsu/cmpe202-diablo/projects/1>
+    - 2.Link to Cumulative Flow Diagram (Team's Google Sheet):  
+<https://docs.google.com/spreadsheets/d/1WfpNNYRP3rYvUrdJ_wghL1T1OJrEb-SbJs0QuJBMSXY/edit#gid=2>
     - 3.Agile Practices Team is Adopting: Kanban
   
 
