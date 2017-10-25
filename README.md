@@ -146,7 +146,7 @@ Running the desktop release on Linux:
 
 Note that you may have to edit the file `Gruntfile.js` if you need to better dictate the order your files load in. Note how by default the game.js and resources.js are specified in a specific order.
 
--------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 Copyright (C) 2011 - 2015 Olivier Biot, Jason Oster, Aaron McLeod,
 Modified work Copyright 2017 Team Diablo.
 melonJS is licensed under the [MIT License](http://www.opensource.org/licenses/mit-license.php)
