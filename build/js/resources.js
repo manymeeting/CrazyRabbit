@@ -5,6 +5,11 @@ game.resources = [
         "src": "data/bgm/"
     },
     {
+        "name": "superMario",
+        "type": "audio",
+        "src": "data/bgm/"
+    },
+    {
         "name": "cling",
         "type": "audio",
         "src": "data/sfx/"
