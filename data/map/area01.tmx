@@ -17,7 +17,7 @@
   <object id="1" name="mainPlayer" x="128" y="224" width="32" height="64">
    <properties>
     <property name="framewidth" type="int" value="64"/>
-    <property name="image" value="gripe_run_right"/>
+    <property name="image" value="a"/>
    </properties>
   </object>
  </objectgroup>

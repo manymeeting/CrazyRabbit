@@ -45,6 +45,11 @@ game.resources = [
         "src": "data/img/map/area01_level_tiles.png"
     },
     {
+        "name": "a",
+        "type": "image",
+        "src": "data/img/sprite/a.png"
+    },
+    {
         "name": "gripe_run_right",
         "type": "image",
         "src": "data/img/sprite/gripe_run_right.png"
