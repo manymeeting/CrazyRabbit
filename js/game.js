@@ -1,4 +1,4 @@
-
+//comment
 /* Game namespace */
 var game = {
 
