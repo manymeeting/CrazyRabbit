@@ -12,6 +12,13 @@
 <https://docs.google.com/spreadsheets/d/1WfpNNYRP3rYvUrdJ_wghL1T1OJrEb-SbJs0QuJBMSXY/edit#gid=2>
 
 - Agile Practices Team is Adopting: Kanban -> Scrum
+
+## Weekly Meeting Minutes
+### Date: 10/28/2017
+### Time: 6pm - 8pm
+#### 1. What did we do last week?
+    - Added elements for main character
+    - Designed the stage2 map
  
 ## Weekly Meeting Minutes
 ### Date: 10/21/2017
