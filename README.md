@@ -8,6 +8,11 @@
 - Link to Task Board (Stories + Defn. of Done):     
 <https://github.com/nguyensjsu/cmpe202-diablo/projects/1>
 
+
+- Link to Burndown Chart (Team's Google Sheet):
+<https://docs.google.com/spreadsheets/d/1bOqFtbCAKWRb6V3CDZZxL7GBya1ZYujjIxSTMR-aTg0/edit?usp=sharing>
+
+
 - Link to Cumulative Flow Diagram (Team's Google Sheet):
 <https://docs.google.com/spreadsheets/d/1WfpNNYRP3rYvUrdJ_wghL1T1OJrEb-SbJs0QuJBMSXY/edit#gid=2>
 
