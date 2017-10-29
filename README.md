@@ -19,6 +19,14 @@
 #### 1. What did we do last week?
     - Added elements for main character
     - Designed the stage2 map
+    - Designed a scrollable map
+#### 2. What is the team going to do next week?
+    - Combine all elements to stage2 map and make it playable
+    - Make game playable on scrollable map
+    - Continue Refactoring code to enhance extensibility
+#### 3. What are the current blockers/challenges our team is facing?
+    - Team members are getting busy
+    - What design patterns we are going to apply
  
 ## Weekly Meeting Minutes
 ### Date: 10/21/2017
