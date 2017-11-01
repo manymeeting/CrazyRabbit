@@ -35,9 +35,19 @@ game.resources = [
         "src": "data/img/area01_bkg1.png"
     },
     {
+        "name": "mainCharacter",
+        "type": "image",
+        "src": "data/img/characters/mainCharacter.png"
+    },
+    {
         "name": "title_screen",
         "type": "image",
         "src": "data/img/gui/title_screen.png"
+    },
+    {
+        "name": "green_radish",
+        "type": "image",
+        "src": "data/img/items/green_radish.png"
     },
     {
         "name": "area01_level_tiles",
