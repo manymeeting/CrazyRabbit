@@ -68,5 +68,10 @@ game.resources = [
         "name": "area01",
         "type": "tmx",
         "src": "data/map/area01.tmx"
+    },
+    {
+        "name": "scroll",
+        "type": "tmx",
+        "src": "data/map/scroll.tmx"
     }
 ];
