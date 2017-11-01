@@ -5,6 +5,11 @@ game.resources = [
         "src": "data/bgm/"
     },
     {
+        "name": "superMario",
+        "type": "audio",
+        "src": "data/bgm/"
+    },
+    {
         "name": "cling",
         "type": "audio",
         "src": "data/sfx/"
@@ -38,6 +43,11 @@ game.resources = [
         "name": "area01_level_tiles",
         "type": "image",
         "src": "data/img/map/area01_level_tiles.png"
+    },
+    {
+        "name": "a",
+        "type": "image",
+        "src": "data/img/sprite/a.png"
     },
     {
         "name": "gripe_run_right",

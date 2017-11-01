@@ -73,6 +73,7 @@ game.PlayerEntity = me.Entity.extend({
 
           // set the jumping flag
           this.body.jumping = true;
+          me.audio.play("jump");
         }
       }
       // apply physics to the body (this moves the entity)
