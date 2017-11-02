@@ -7,6 +7,6 @@
 
 #nodejs
 node_modules/
-#build/
+build/
 app/vendor/
 *.log
