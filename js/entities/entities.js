@@ -97,46 +97,47 @@ game.PlayerEntity = me.Entity.extend({
              if (other.type === "platform") {
                  if (this.body.falling &&
                      !me.input.isKeyPressed('down') &&
-                     
+
                      // Shortest overlap would move the player upward
                      (response.overlapV.y > 0) &&
-                     
+
                      // The velocity is reasonably fast enough to have penetrated to the overlap depth
                      (~~this.body.vel.y >= ~~response.overlapV.y)
                      ) {
                          // Disable collision on the x axis
                          response.overlapV.x = 0;
-                         
+
                          // Repond to the platform (it is solid)
                          return true;
                        }
-             
+
                  // Do not respond to the platform (pass through)
                  return false;
              }
              break;
-         
+
              case me.collision.types.ENEMY_OBJECT:
              if ((response.overlapV.y>0) && !this.body.jumping) {
                  // bounce (force jump)
                  this.body.falling = false;
                  this.body.vel.y = -this.body.maxVel.y * me.timer.tick;
-                 
+
                  // set the jumping flag
                  this.body.jumping = true;
              }
              else {
                  // let's flicker in case we touched an enemy
                  this.renderable.flicker(750);
+                 game.data.score -= 1;
              }
-             
+
              // Fall through
-             
+
              default:
                  // Do not respond to other objects (e.g. coins)
                  return false;
              }
-         
+
          // Make the object solid
          return true;
      }
@@ -156,7 +157,7 @@ game.CoinEntity = me.CollectableEntity.extend({
     // an object is touched by something (here collected)
     onCollision : function (response, other) {
         // do something when collected
-
+        game.data.score += 250;
         // make sure it cannot be collected "again"
         this.body.setCollisionMask(me.collision.types.NO_OBJECT);
 

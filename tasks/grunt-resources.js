@@ -1,3 +1,9 @@
+// game.resources = [
+//   { name: "PressStart2P", type:"image", src: "data/fnt/PressStart2P.png" },
+//   { name: "PressStart2P", type:"binary", src: "data/fnt/PressStart2P.fnt"}
+// ];
+
+
 module.exports = function (grunt) {
     function task() {
         var path = require("path"),
