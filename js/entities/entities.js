@@ -20,7 +20,7 @@ game.PlayerEntity = me.Entity.extend({
         this.alwaysUpdate = true;
 
         // define a basic walking animation (using all frames)
-        this.renderable.addAnimation("walk",  [0, 1, 2, 3, 4, 5, 6, 7]);
+        this.renderable.addAnimation("walk",  [0, 1, 2, 3]);
 
         // define a standing animation (using the first frame)
         this.renderable.addAnimation("stand",  [0]);
