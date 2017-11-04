@@ -19,6 +19,18 @@
 - Agile Practices Team is Adopting: Kanban -> Scrum
 
 ## Weekly Meeting Minutes
+### Date: 11/4/2017
+### Time: 6pm - 8pm
+#### 1. What did we do last week?
+
+#### 2. What is the team going to do next week?
+- Merging all the branches to master
+- Design a new character
+- Continue Refactoring code to enhance extensibility
+#### 3. What are the current blockers/challenges our team is facing?
+
+
+## Weekly Meeting Minutes
 ### Date: 10/28/2017
 ### Time: 6pm - 8pm
 #### 1. What did we do last week?
