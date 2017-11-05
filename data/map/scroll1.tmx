@@ -31,8 +31,8 @@
  <objectgroup name="players">
   <object id="17" name="mainPlayer" x="166.63" y="320.01" width="40" height="64">
    <properties>
-    <property name="framewidth" type="int" value="64"/>
-    <property name="image" type="file" value="../img/sprite/gripe_run_right.png"/>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" type="file" value="../img/characters/mainCharacter.png"/>
    </properties>
   </object>
   <object id="31" x="613.299" y="-286.206"/>
