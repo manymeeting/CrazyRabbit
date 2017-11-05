@@ -16,7 +16,7 @@
 - Link to Cumulative Flow Diagram (Team's Google Sheet):
 <https://docs.google.com/spreadsheets/d/1WfpNNYRP3rYvUrdJ_wghL1T1OJrEb-SbJs0QuJBMSXY/edit#gid=2>
 
-- Agile Practices Team is Adopting: Kanban -> Scrum
+- Agile Practices Team is Adopting: XP
 
 ## Weekly Meeting Minutes
 ### Date: 11/4/2017
