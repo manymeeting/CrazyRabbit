@@ -128,6 +128,7 @@ A vague description of what we should do and what a feature was will do nothing 
 - Added new Hud features, This help with the measure the number of collection coins. It's a key feature which we will be use this number to decide the life circle of main character. Next week we will add more maps as well as add another key feature, add CheckPoint. This will deal with swithing between diffrernt Maps.
 
 ###  Weiyu Jin
+- Based on this weeks communication, we discuss about the last week's process. Also, we also discuss about the git operation avoid messing up the branch. 
 
 ###  Xiaoran Lin
 
