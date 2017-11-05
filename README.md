@@ -126,13 +126,17 @@ A vague description of what we should do and what a feature was will do nothing 
 ### Date: 11/4/2017
 ### Time: 6pm - 8pm
 #### 1. What did we do last week?
-
+- Fixed the bug in scrollable map
+- Decided there would be totally 4 maps in the game
+- Discussed if there will be life, health, and coin counts in the game.
 #### 2. What is the team going to do next week?
-- Merging all the branches to master
-- Design a new character
+- Merging new features to master
+- Design a coin counts and life value
+- Design a new level map
 - Continue Refactoring code to enhance extensibility
 #### 3. What are the current blockers/challenges our team is facing?
-
+- Implementation of level switch
+- Implementation of coin counts and life value
 
 ## Weekly Meeting Minutes
 ### Date: 10/28/2017
