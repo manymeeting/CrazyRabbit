@@ -1,7 +1,16 @@
 # Diablo Team Project
 - Team Name: cmpe202-diablo
 
-- Team Member Names: Mutian Wang, Zihan Ke, Weiyu Jin, Ruifeng Sheng, Xiaoran Lin
+- Team Member Names: Mutian Wang, 
+
+
+
+
+
+
+
+
+Ke, Weiyu Jin, Ruifeng Sheng, Xiaoran Lin
 
 
 ## Progress Overview:
@@ -116,6 +125,7 @@ A vague description of what we should do and what a feature was will do nothing 
 - Communication. During this week, we were try merging our branches to the master branch. But not as the expected, it has a lot of conflicts of each member's commits. Due to this situation, we had to have more meetings this week, to discuss each branch coming from and working for, also to format the way of the branch named. 
 
 ###  Zihan Ke
+- Added new Hud features, This help with the measure the number of collection coins. It's a key feature which we will be use this number to decide the life circle of main character. Next week we will add more maps as well as add another key feature, add CheckPoint. This will deal with swithing between diffrernt Maps.
 
 ###  Weiyu Jin
 
