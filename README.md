@@ -108,6 +108,8 @@ A vague description of what we should do and what a feature was will do nothing 
 
 ###  Xiaoran Lin
 
+- It is still the courage that leads me this week. Even though I had poor arts background, I designed a whole scroll map myself. It did not work out in the game, but I was confident I will fix it next week.
+
 ## Weekly Meeting Minutes
 ### Date: 11/4/2017
 ### Time: 6pm - 8pm
