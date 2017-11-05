@@ -1,7 +1,16 @@
 # Diablo Team Project
 - Team Name: cmpe202-diablo
 
-- Team Member Names: Mutian Wang, Zihan Ke, Weiyu Jin, Ruifeng Sheng, Xiaoran Lin
+- Team Member Names: Mutian Wang, 
+
+
+
+
+
+
+
+
+Ke, Weiyu Jin, Ruifeng Sheng, Xiaoran Lin
 
 
 ## Progress Overview:
@@ -108,17 +117,37 @@ A vague description of what we should do and what a feature was will do nothing 
 
 ###  Xiaoran Lin
 
+- It is still the courage that leads me this week. Even though I had poor arts background, I designed a whole scroll map myself. It did not work out in the game, but I was confident I will fix it next week.
+
+## 11/04/2017
+###  Mutian Wang
+###  Ruifeng Sheng
+- Communication. During this week, we were try merging our branches to the master branch. But not as the expected, it has a lot of conflicts of each member's commits. Due to this situation, we had to have more meetings this week, to discuss each branch coming from and working for, also to format the way of the branch named. 
+
+###  Zihan Ke
+- Added new Hud features, This help with the measure the number of collection coins. It's a key feature which we will be use this number to decide the life circle of main character. Next week we will add more maps as well as add another key feature, add CheckPoint. This will deal with swithing between diffrernt Maps.
+
+###  Weiyu Jin
+
+###  Xiaoran Lin
+
+- Communication. Last week my map design did not work, but my teammates pointed out my mistake and taught me how to fix that mistake. Then I did it. Mutian Wang was a nice teacher, he always knew what my problem was and what I was worried about, and since I wanted to fix my mistake, the communication went on so well.
+
 ## Weekly Meeting Minutes
 ### Date: 11/4/2017
 ### Time: 6pm - 8pm
 #### 1. What did we do last week?
-
+- Fixed the bug in scrollable map
+- Decided there would be totally 4 maps in the game
+- Discussed if there will be life, health, and coin counts in the game.
 #### 2. What is the team going to do next week?
-- Merging all the branches to master
-- Design a new character
+- Merging new features to master
+- Design a coin counts and life value
+- Design a new level map
 - Continue Refactoring code to enhance extensibility
 #### 3. What are the current blockers/challenges our team is facing?
-
+- Implementation of level switch
+- Implementation of coin counts and life value
 
 ## Weekly Meeting Minutes
 ### Date: 10/28/2017
