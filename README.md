@@ -110,6 +110,18 @@ A vague description of what we should do and what a feature was will do nothing 
 
 - It is still the courage that leads me this week. Even though I had poor arts background, I designed a whole scroll map myself. It did not work out in the game, but I was confident I will fix it next week.
 
+## 11/04/2017
+###  Mutian Wang
+###  Ruifeng Sheng
+
+###  Zihan Ke
+
+###  Weiyu Jin
+
+###  Xiaoran Lin
+
+- Communication. Last week my map design did not work, but my teammates pointed out my mistake and taught me how to fix that mistake. Then I did it. Mutian Wang was a nice teacher, he always knew what my problem was and what I was worried about, and since I wanted to fix my mistake, the communication went on so well.
+
 ## Weekly Meeting Minutes
 ### Date: 11/4/2017
 ### Time: 6pm - 8pm
