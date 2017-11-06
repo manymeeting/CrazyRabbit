@@ -75,6 +75,9 @@ Ke, Weiyu Jin, Ruifeng Sheng, Xiaoran Lin
 - In this week, I would like to pick "Feedback" as my core value. The communication cycle is incomplete without feedback, and it contributes to the stability and equilibrium of a communication process. After three weeks working, we discussed about the first version of coding and designing parts(like characters and maps). We came to know the positive and negative sides of our work, and made the change immediately. 
  
 ###  Adam Ke
+
+- God Save the queue. 
+
 ###  Weiyu Jin
 
 - Based on this weeks communication, we all worked well on our part. We have a communication of our process, goals on next weeks. We also decide to design the first complete map in the game.
