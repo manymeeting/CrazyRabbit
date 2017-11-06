@@ -5,7 +5,7 @@ game.PlayScreen = me.ScreenObject.extend({
     onResetEvent: function() {
         me.audio.playTrack("superMario");
         // load a level
-        me.levelDirector.loadLevel("scroll1");
+        me.levelDirector.loadLevel("area02");
 
         // reset the score
         game.data.score = 0;
