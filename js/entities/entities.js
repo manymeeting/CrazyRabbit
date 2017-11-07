@@ -124,6 +124,11 @@ game.PlayerEntity = me.Entity.extend({
                     // let's flicker in case we touched an enemy
                     this.renderable.flicker(750);
                     game.data.score -= 1;
+
+                    if(game.data.score <= this.DEAD_SCORE)
+                    {
+                        // TODO game over
+                    }
                 }
 
                 // Fall through
@@ -136,6 +141,20 @@ game.PlayerEntity = me.Entity.extend({
         return true;
     }
 });
+
+/**
+ * Dead score of the player
+ * @type Number
+ * @name DEAD_SCORE
+ * @memberOf game.PlayerEntity
+ */
+Object.defineProperty(game.PlayerEntity.prototype, "DEAD_SCORE", {
+    enumerable: true,
+    configurable: false,
+    writable: false,
+    value: -300
+});
+
 /**
  * a Coin entity
  */
@@ -236,11 +255,30 @@ game.EnemyEntity = me.Entity.extend({
         if (response.b.body.collisionType !== me.collision.types.WORLD_SHAPE) {
             // res.y > 0 means touched by something on the bottom
             if (this.alive && (response.overlapV.y < 0) && response.a.body.falling) {
-                this.renderable.flicker(750);
+                this.lifePoint--;
+                if(this.lifePoint <= 0) {
+                    me.game.world.removeChild(this);
+                }
+                else {
+                    this.renderable.flicker(750);
+                }
             }
             return false;
         }
         // Make all other objects solid
         return true;
     }
+});
+
+/**
+ * Life point of the enemy
+ * @type Number
+ * @name lifePoint
+ * @memberOf game.EnemyEntity
+ */
+Object.defineProperty(game.EnemyEntity.prototype, "lifePoint", {
+    enumerable: true,
+    configurable: false,
+    writable: true,
+    value: 2
 });
