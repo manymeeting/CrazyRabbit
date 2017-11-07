@@ -234,8 +234,7 @@ game.EnemyEntity = me.Entity.extend({
      */
     onCollision: function(response, other) {
         if (response.b.body.collisionType !== me.collision.types.WORLD_SHAPE) {
-            // res.y >0 means touched by something on the bottom
-            // which mean at top position for this one
+            // res.y > 0 means touched by something on the bottom
             if (this.alive && (response.overlapV.y < 0) && response.a.body.falling) {
                 this.renderable.flicker(750);
             }
