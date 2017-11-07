@@ -108,6 +108,8 @@ A vague description of what we should do and what a feature was will do nothing 
 
 ## 10/28/2017
 ###  Mutian Wang
+- Courage. Whenever we face overwhelming problems, we are supposed to seek for solutions instead of trying to put it aside, because problems never disappear unless we actually solve it by ourselves.
+
 ###  Ruifeng Sheng
 
 - As the first week of scrum, we discussed what we did in last four weeks, and re-planned what we will do in next four weeks in details. 
