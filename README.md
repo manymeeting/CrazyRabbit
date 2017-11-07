@@ -124,6 +124,8 @@ A vague description of what we should do and what a feature was will do nothing 
 
 ## 11/04/2017
 ###  Mutian Wang
+- Courage. Sometimes it's hard to understand what is the biggest problem in the team because the most important information can be somehow hidden by its owner. In order to discover the difficulties we have and find solutions, each team member is encouraged to report issues as soon as possible, so that we can respond immediately and work together to solve the problem. 
+
 ###  Ruifeng Sheng
 - Communication. During this week, we were try merging our branches to the master branch. But not as the expected, it has a lot of conflicts of each member's commits. Due to this situation, we had to have more meetings this week, to discuss each branch coming from and working for, also to format the way of the branch named. 
 
