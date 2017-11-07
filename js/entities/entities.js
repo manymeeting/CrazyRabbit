@@ -127,7 +127,8 @@ game.PlayerEntity = me.Entity.extend({
 
                     if(game.data.score <= this.DEAD_SCORE)
                     {
-                        // TODO game over
+                        // game over, return to menu screen
+                        me.state.change(me.state.MENU);
                     }
                 }
 
@@ -152,7 +153,7 @@ Object.defineProperty(game.PlayerEntity.prototype, "DEAD_SCORE", {
     enumerable: true,
     configurable: false,
     writable: false,
-    value: -300
+    value: -100
 });
 
 /**
