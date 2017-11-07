@@ -24,13 +24,13 @@ game.TitleScreen = me.ScreenObject.extend({
                 // font for the scrolling text
                 this.font = new me.BitmapFont(me.loader.getBinary('PressStart2P'), me.loader.getImage('PressStart2P'));
 
+                this.scroller = "WELCOME TO THE WORLD OF A CRAZY RABBIT!";
+                this.scrollerpos = 600;
                 // a tween to animate the arrow
                 this.scrollertween = new me.Tween(this).to({
                     scrollerpos: -1200
                 }, 10000).onComplete(this.scrollover.bind(this)).start();
-
-                this.scroller = "WELCOME TO THE WORLD OF A CRAZY RABBIT!";
-                this.scrollerpos = 600;
+                
             },
 
             // some callback for the tween objects
