@@ -132,7 +132,6 @@ game.PlayerEntity = me.Entity.extend({
              }
 
              // Fall through
-
              default:
                  // Do not respond to other objects (e.g. coins)
                  return false;
@@ -242,10 +241,10 @@ game.EnemyEntity = me.Entity.extend({
     */
     onCollision : function (response, other) {
         if (response.b.body.collisionType !== me.collision.types.WORLD_SHAPE) {
-        // res.y >0 means touched by something on the bottom
-        // which mean at top position for this one
-            if (this.alive && (response.overlapV.y > 0) && response.a.body.falling) {
-                s.renderable.flicker(750);
+            // res.y >0 means touched by something on the bottom
+            // which mean at top position for this one
+            if (this.alive && (response.overlapV.y < 0) && response.a.body.falling) {
+                this.renderable.flicker(750);
             }
             return false;
         }
