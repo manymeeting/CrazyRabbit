@@ -1,16 +1,7 @@
 # Diablo Team Project
 - Team Name: cmpe202-diablo
 
-- Team Member Names: Mutian Wang, 
-
-
-
-
-
-
-
-
-Ke, Weiyu Jin, Ruifeng Sheng, Xiaoran Lin
+- Team Member Names: Mutian Wang, Zihan Ke, Weiyu Jin, Ruifeng Sheng, Xiaoran Lin
 
 
 ## Progress Overview:
