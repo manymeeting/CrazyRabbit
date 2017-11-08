@@ -113,8 +113,6 @@ game.PlayerEntity = me.Entity.extend({
                 break;
 
             case me.collision.types.ENEMY_OBJECT:
-                // console.log("player");
-                // console.log("player overlapV.y > 0 ?: " + response.overlapV.y + " " + (response.overlapV.y > 0 + ""));
                 if ((response.overlapV.y > 0) && !this.body.jumping) {
                     // bounce (force jump)
                     // this.body.falling = false;
@@ -262,12 +260,6 @@ game.EnemyEntity = me.Entity.extend({
      */
     onCollision: function(response, other) {
         if (response.b.body.collisionType !== me.collision.types.WORLD_SHAPE) {
-            // console.log("enemy");
-            // console.log("B overlapV.y > 0: " + response.overlapV.y);
-            // console.log("enemy overlapV > 0 ?: " + response.overlapV.y);
-            // console.log("is falling: " + response.a.body.falling)
-            // console.log("is jumping: " + response.a.body.jumping)
-            // console.log(response.a);
             // res.y > 0 means touched by something on the bottom
             if (this.alive && (response.overlapV.y > 0) && response.a.body.falling) {
                 this.lifePoint--;
