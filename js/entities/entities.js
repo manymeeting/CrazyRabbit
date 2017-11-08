@@ -113,13 +113,19 @@ game.PlayerEntity = me.Entity.extend({
                 break;
 
             case me.collision.types.ENEMY_OBJECT:
+                // console.log("player");
+                // console.log("player overlapV.y > 0 ?: " + response.overlapV.y + " " + (response.overlapV.y > 0 + ""));
                 if ((response.overlapV.y > 0) && !this.body.jumping) {
                     // bounce (force jump)
-                    this.body.falling = false;
+                    // this.body.falling = false;
                     this.body.vel.y = -this.body.maxVel.y * me.timer.tick;
                     // set the jumping flag
-                    this.body.jumping = true;
-                    break;
+                    // this.body.jumping = true;
+                    // move out of the other object shape
+                    this.body.entity.pos.sub(response.overlapV);
+                    // due to the implementation of me.Body.respondToCollision, we customize the collision response logic here and return false.
+                    // e.g. when 0 < overlap.y < 1, respondToCollision will set this.falling to false, whereas we expect it to be true.
+                    return false;
                 } else {
                     // let's flicker in case we touched an enemy
                     this.renderable.flicker(750);
@@ -131,6 +137,7 @@ game.PlayerEntity = me.Entity.extend({
                         me.audio.fade("superMario",1,0,10);
                         me.audio.play("death", false, me.state.change(me.state.MENU));
                     }
+                    return false;
                 }
 
                 // Fall through
@@ -255,6 +262,12 @@ game.EnemyEntity = me.Entity.extend({
      */
     onCollision: function(response, other) {
         if (response.b.body.collisionType !== me.collision.types.WORLD_SHAPE) {
+            // console.log("enemy");
+            // console.log("B overlapV.y > 0: " + response.overlapV.y);
+            // console.log("enemy overlapV > 0 ?: " + response.overlapV.y);
+            // console.log("is falling: " + response.a.body.falling)
+            // console.log("is jumping: " + response.a.body.jumping)
+            // console.log(response.a);
             // res.y > 0 means touched by something on the bottom
             if (this.alive && (response.overlapV.y > 0) && response.a.body.falling) {
                 this.lifePoint--;
