@@ -114,13 +114,6 @@ game.PlayerEntity = me.Entity.extend({
 
             case me.collision.types.ENEMY_OBJECT:
                 if ((response.overlapV.y > 0) && !this.body.jumping) {
-                    // bounce (force jump)
-                    // this.body.falling = false;
-                    this.body.vel.y = -this.body.maxVel.y * me.timer.tick;
-                    // set the jumping flag
-                    // this.body.jumping = true;
-                    // move out of the other object shape
-                    this.body.entity.pos.sub(response.overlapV);
                     // due to the implementation of me.Body.respondToCollision, we customize the collision response logic here and return false.
                     // e.g. when 0 < overlap.y < 1, respondToCollision will set this.falling to false, whereas we expect it to be true.
                     return false;
@@ -261,7 +254,15 @@ game.EnemyEntity = me.Entity.extend({
     onCollision: function(response, other) {
         if (response.b.body.collisionType !== me.collision.types.WORLD_SHAPE) {
             // res.y > 0 means touched by something on the bottom
-            if (this.alive && (response.overlapV.y > 0) && response.a.body.falling) {
+            if (this.alive && (response.overlapV.y > 0) && other.body.falling) {
+                // update other's status (implement it here to ensure the failing and jumping status haven't been affected by previous collision handling functions)
+                other.body.falling = false;
+                other.body.vel.y = -other.body.maxVel.y * me.timer.tick;
+                other.body.jumping = true;
+                // move other's position out of the enemy
+                other.body.entity.pos.sub(response.overlapV);
+
+                // update status for enemy itself
                 this.lifePoint--;
                 if(this.lifePoint <= 0) {
                     me.game.world.removeChild(this);
