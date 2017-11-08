@@ -128,7 +128,8 @@ game.PlayerEntity = me.Entity.extend({
                     if(game.data.score <= this.DEAD_SCORE)
                     {
                         // game over, return to menu screen
-                        me.state.change(me.state.MENU);
+                        me.audio.fade("superMario",1,0,10);
+                        me.audio.play("death", false, me.state.change(me.state.MENU));
                     }
                 }
 
@@ -153,7 +154,7 @@ Object.defineProperty(game.PlayerEntity.prototype, "DEAD_SCORE", {
     enumerable: true,
     configurable: false,
     writable: false,
-    value: -500
+    value: -5
 });
 
 /**
