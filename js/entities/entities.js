@@ -117,9 +117,9 @@ game.PlayerEntity = me.Entity.extend({
                     // bounce (force jump)
                     this.body.falling = false;
                     this.body.vel.y = -this.body.maxVel.y * me.timer.tick;
-
                     // set the jumping flag
                     this.body.jumping = true;
+                    break;
                 } else {
                     // let's flicker in case we touched an enemy
                     this.renderable.flicker(750);
@@ -153,7 +153,7 @@ Object.defineProperty(game.PlayerEntity.prototype, "DEAD_SCORE", {
     enumerable: true,
     configurable: false,
     writable: false,
-    value: -100
+    value: -500
 });
 
 /**
@@ -255,7 +255,7 @@ game.EnemyEntity = me.Entity.extend({
     onCollision: function(response, other) {
         if (response.b.body.collisionType !== me.collision.types.WORLD_SHAPE) {
             // res.y > 0 means touched by something on the bottom
-            if (this.alive && (response.overlapV.y < 0) && response.a.body.falling) {
+            if (this.alive && (response.overlapV.y > 0) && response.a.body.falling) {
                 this.lifePoint--;
                 if(this.lifePoint <= 0) {
                     me.game.world.removeChild(this);
