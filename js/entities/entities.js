@@ -156,7 +156,7 @@ Object.defineProperty(game.PlayerEntity.prototype, "DEAD_SCORE", {
 });
 
 /**
- * a Coin entity
+ * Enenties that represent coins. The player is able to collect coins and accumulate its game score.
  */
 game.CoinEntity = me.CollectableEntity.extend({
     // extending the init function is not mandatory
@@ -181,7 +181,9 @@ game.CoinEntity = me.CollectableEntity.extend({
     }
 });
 
-//=========================
+/**
+ * Enenties that when touched will end the game.
+ */
 game.deathEntity = me.Entity.extend({
     init: function(x, y, settings) {
         // call the parent constructor
@@ -196,7 +198,7 @@ game.deathEntity = me.Entity.extend({
 
 
 /**
- * an enemy Entity
+ * Entities that represent general enemies.
  */
 game.EnemyEntity = me.Entity.extend({
     init: function(x, y, settings) {
@@ -261,10 +263,6 @@ game.EnemyEntity = me.Entity.extend({
         return (this._super(me.Entity, 'update', [dt]) || this.body.vel.x !== 0 || this.body.vel.y !== 0);
     },
 
-    /**
-     * colision handler
-     * (called when colliding with other objects)
-     */
     onCollision: function(response, other) {
         if (response.b.body.collisionType !== me.collision.types.WORLD_SHAPE) {
             // res.y > 0 means touched by something on the bottom
@@ -287,7 +285,7 @@ game.EnemyEntity = me.Entity.extend({
             }
             return false;
         }
-        // Make all other objects solid
+        // make all other objects solid
         return true;
     }
 });
