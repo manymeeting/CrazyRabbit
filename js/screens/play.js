@@ -3,7 +3,7 @@ game.PlayScreen = me.ScreenObject.extend({
      *  action to perform on state change
      */
     onResetEvent: function() {
-        me.audio.playTrack("superMario");
+        me.audio.playTrack("bgm2");
         // load a level
         me.levelDirector.loadLevel("area02");
 

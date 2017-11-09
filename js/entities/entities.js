@@ -125,7 +125,7 @@ game.PlayerEntity = me.Entity.extend({
                     if(game.data.score <= this.DEAD_SCORE)
                     {
                         // game over, return to menu screen
-                        me.audio.fade("superMario",1,0,10);
+                        me.audio.fade("bgm2",1,0,10);
                         me.audio.play("death", false, me.state.change(me.state.MENU));
                     }
                     return false;
@@ -180,6 +180,31 @@ game.CoinEntity = me.CollectableEntity.extend({
         return false
     }
 });
+
+//=========================
+game.deathEntity = me.Entity.extend({
+    onCollision: function(response, other) {
+        if (response.b.body.collisionType !== me.collision.types.WORLD_SHAPE) {
+            // res.y > 0 means touched by something on the bottom
+            if (this.alive && (response.overlapV.y > 0) && other.body.falling) {
+                // update other's status (implement it here to ensure the failing and jumping status haven't been affected by previous collision handling functions)
+                other.body.falling = false;
+                other.body.vel.y = -other.body.maxVel.y * me.timer.tick;
+                other.body.jumping = true;
+                // move other's position out of the enemy
+                other.body.entity.pos.sub(response.overlapV);
+
+                // update status for enemy itself
+
+                me.game.world.removeChild(this);
+            }
+            return false;
+        }
+        // Make all other objects solid
+        return true;
+    }
+})
+
 
 /**
  * an enemy Entity
@@ -289,4 +314,15 @@ Object.defineProperty(game.EnemyEntity.prototype, "lifePoint", {
     configurable: false,
     writable: true,
     value: 2
+});
+
+/**
+ * Life point of the death
+ * @type Number
+ * @name deathPoint
+ * @memberOf game.deathEntity
+ */
+Object.defineProperties(game.deathEntity.prototype,"deathPoint",{
+    configurable: false,
+    writable: false
 });

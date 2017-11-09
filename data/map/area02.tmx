@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="60" height="15" tilewidth="32" tileheight="32" nextobjectid="137">
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="60" height="15" tilewidth="32" tileheight="32" nextobjectid="141">
  <tileset firstgid="1" source="area02_level_tiles.tsx"/>
  <layer name="sky" width="60" height="15">
   <data encoding="base64">
@@ -47,21 +47,24 @@
   </data>
  </layer>
  <objectgroup name="enemies">
-  <object id="5" name="EnemyEntity" x="128.294" y="416.631" width="192" height="64">
+  <object id="5" name="EnemyEntity" x="181.442" y="1.66779" width="192" height="64">
    <properties>
     <property name="image" value="../img/sprite/wheelie_right.png"/>
    </properties>
   </object>
-  <object id="55" name="EnemyEntity" x="1153.14" y="416.082" width="320" height="64">
+  <object id="55" name="EnemyEntity" x="995.905" y="45.7207" width="320" height="64">
    <properties>
     <property name="image" value="../img/sprite/wheelie_right.png"/>
    </properties>
   </object>
-  <object id="56" name="EnemyEntity" x="1536.05" y="415.602" width="320" height="64">
+  <object id="56" name="EnemyEntity" x="538.503" y="317.483" width="320" height="64">
    <properties>
     <property name="image" value="../img/sprite/wheelie_right.png"/>
    </properties>
   </object>
+ </objectgroup>
+ <objectgroup name="DeathEntity">
+  <object id="138" name="deathEntity" x="68.2885" y="462.015" width="278.489" height="8.53606"/>
  </objectgroup>
  <objectgroup name="players">
   <object id="2" name="mainPlayer" x="32" y="288" width="32" height="64">
