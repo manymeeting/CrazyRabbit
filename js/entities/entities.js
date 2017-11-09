@@ -184,7 +184,7 @@ game.CoinEntity = me.CollectableEntity.extend({
 /**
  * Enenties that when touched will end the game.
  */
-game.deathEntity = me.Entity.extend({
+game.DeathEntity = me.Entity.extend({
     init: function(x, y, settings) {
         // call the parent constructor
         this._super(me.CollectableEntity, 'init', [x, y, settings]);

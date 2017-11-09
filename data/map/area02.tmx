@@ -64,9 +64,9 @@
   </object>
  </objectgroup>
  <objectgroup name="DeathEntity">
-  <object id="138" name="deathEntity" x="68.2885" y="466.283" width="278.489" height="8.53606"/>
-  <object id="142" name="deathEntity" x="450.811" y="468.417" width="60.8193" height="8.53606"/>
-  <object id="143" name="deathEntity" x="1051.54" y="469.484" width="867.477" height="8.53606"/>
+  <object id="138" name="DeathEntity" x="68.2885" y="466.283" width="278.489" height="8.53606"/>
+  <object id="142" name="DeathEntity" x="450.811" y="468.417" width="60.8193" height="8.53606"/>
+  <object id="143" name="DeathEntity" x="1051.54" y="469.484" width="867.477" height="8.53606"/>
  </objectgroup>
  <objectgroup name="players">
   <object id="2" name="mainPlayer" x="32" y="288" width="32" height="64">
