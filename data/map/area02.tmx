@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="60" height="15" tilewidth="32" tileheight="32" nextobjectid="141">
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="60" height="15" tilewidth="32" tileheight="32" nextobjectid="144">
  <tileset firstgid="1" source="area02_level_tiles.tsx"/>
  <layer name="sky" width="60" height="15">
   <data encoding="base64">
@@ -65,6 +65,8 @@
  </objectgroup>
  <objectgroup name="DeathEntity">
   <object id="138" name="deathEntity" x="68.2885" y="466.283" width="278.489" height="8.53606"/>
+  <object id="142" name="deathEntity" x="450.811" y="468.417" width="60.8193" height="8.53606"/>
+  <object id="143" name="deathEntity" x="1051.54" y="469.484" width="867.477" height="8.53606"/>
  </objectgroup>
  <objectgroup name="players">
   <object id="2" name="mainPlayer" x="32" y="288" width="32" height="64">
@@ -107,7 +109,7 @@
   <object id="107" x="1.33227e-15" y="384.536" width="64" height="96"/>
   <object id="108" x="63.998" y="383.807" width="64" height="64"/>
   <object id="110" x="128.38" y="384.153" width="64" height="32"/>
-  <object id="111" x="350.866" y="351.849" width="96" height="128"/>
+  <object id="111" x="353" y="352.916" width="96" height="128"/>
   <object id="112" x="319.301" y="352.429" width="32" height="64"/>
   <object id="113" x="1823.35" y="223.834">
    <polyline points="0,0 95.8493,-1.13908"/>
