@@ -183,25 +183,14 @@ game.CoinEntity = me.CollectableEntity.extend({
 
 //=========================
 game.deathEntity = me.Entity.extend({
+    init: function(x, y, settings) {
+        // call the parent constructor
+        this._super(me.CollectableEntity, 'init', [x, y, settings]);
+    },
     onCollision: function(response, other) {
-        if (response.b.body.collisionType !== me.collision.types.WORLD_SHAPE) {
-            // res.y > 0 means touched by something on the bottom
-            if (this.alive && (response.overlapV.y > 0) && other.body.falling) {
-                // update other's status (implement it here to ensure the failing and jumping status haven't been affected by previous collision handling functions)
-                other.body.falling = false;
-                other.body.vel.y = -other.body.maxVel.y * me.timer.tick;
-                other.body.jumping = true;
-                // move other's position out of the enemy
-                other.body.entity.pos.sub(response.overlapV);
-
-                // update status for enemy itself
-
-                me.game.world.removeChild(this);
-            }
-            return false;
-        }
-        // Make all other objects solid
-        return true;
+        me.audio.fade("bgm2",1,0,10);
+        me.audio.play("death", false, me.state.change(me.state.MENU));
+        return false
     }
 })
 
