@@ -124,9 +124,7 @@ game.PlayerEntity = me.Entity.extend({
 
                     if(game.data.score <= this.DEAD_SCORE)
                     {
-                        // game over, return to menu screen
-                        me.audio.fade("bgm2",1,0,10);
-                        me.audio.play("death", false, me.state.change(me.state.MENU));
+                        this.diablo_onDie();
                     }
                     return false;
                 }
@@ -139,6 +137,21 @@ game.PlayerEntity = me.Entity.extend({
 
         // Make the object solid
         return true;
+    },
+
+    /**
+     * Do on player die (add prefix to avoid compatibility issue with future verison fo Melon)
+     * (called when die condition is reached)
+     */
+    diablo_onDie: function()
+    {
+        // remove the player from the screen (to avoid continuous collision)
+        me.game.world.removeChild(this);
+        me.audio.fade("bgm2",1,0,10);
+        me.audio.play("death", false, function(){
+            // go back to menu on music ends
+            me.state.change(me.state.MENU);
+        });
     }
 });
 
@@ -190,8 +203,7 @@ game.DeathEntity = me.Entity.extend({
         this._super(me.CollectableEntity, 'init', [x, y, settings]);
     },
     onCollision: function(response, other) {
-        me.audio.fade("bgm2",1,0,10);
-        me.audio.play("death", false, me.state.change(me.state.MENU));
+        other.diablo_onDie();
         return false
     }
 })
