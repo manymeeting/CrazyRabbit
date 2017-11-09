@@ -64,7 +64,7 @@
   </object>
  </objectgroup>
  <objectgroup name="DeathEntity">
-  <object id="138" name="deathEntity" x="68.2885" y="462.015" width="278.489" height="8.53606"/>
+  <object id="138" name="deathEntity" x="68.2885" y="466.283" width="278.489" height="8.53606"/>
  </objectgroup>
  <objectgroup name="players">
   <object id="2" name="mainPlayer" x="32" y="288" width="32" height="64">
