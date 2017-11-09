@@ -304,14 +304,3 @@ Object.defineProperty(game.EnemyEntity.prototype, "lifePoint", {
     writable: true,
     value: 2
 });
-
-/**
- * Life point of the death
- * @type Number
- * @name deathPoint
- * @memberOf game.deathEntity
- */
-Object.defineProperties(game.deathEntity.prototype,"deathPoint",{
-    configurable: false,
-    writable: false
-});
