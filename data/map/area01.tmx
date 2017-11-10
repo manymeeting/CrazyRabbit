@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" backgroundcolor="#a1cee1" nextobjectid="47">
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" backgroundcolor="#a1cee1" nextobjectid="64">
  <tileset firstgid="1" name="area01_level_tiles" tilewidth="32" tileheight="32" tilecount="140" columns="20">
   <image source="../img/map/area01_level_tiles.png" width="640" height="241"/>
  </tileset>
@@ -34,6 +34,9 @@
     <property name="image" type="file" value="../img/sprite/wheelie_right.png"/>
    </properties>
   </object>
+ </objectgroup>
+ <objectgroup name="enemyEntities3">
+  <object id="61" x="340" y="415" width="118" height="32" rotation="180"/>
  </objectgroup>
  <objectgroup name="coin">
   <object id="22" name="CoinEntity" x="25" y="95" width="32" height="32">
