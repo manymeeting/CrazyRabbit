@@ -36,7 +36,7 @@
   </object>
  </objectgroup>
  <objectgroup name="enemyEntities3">
-  <object id="61" x="340" y="415" width="118" height="32" rotation="180"/>
+  <object id="61" name="EnemyEntity" x="340" y="415" width="118" height="32" rotation="180"/>
  </objectgroup>
  <objectgroup name="coin">
   <object id="22" name="CoinEntity" x="25" y="95" width="32" height="32">
@@ -64,12 +64,6 @@
    </properties>
   </object>
   <object id="36" name="CoinEntity" x="300" y="158" width="32" height="32">
-   <properties>
-    <property name="framewidth" type="int" value="32"/>
-    <property name="image" type="file" value="../img/sprite/spinning_coin_gold.png"/>
-   </properties>
-  </object>
-  <object id="64" name="CoinEntity" x="312" y="290" width="32" height="32">
    <properties>
     <property name="framewidth" type="int" value="32"/>
     <property name="image" type="file" value="../img/sprite/spinning_coin_gold.png"/>
