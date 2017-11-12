@@ -134,7 +134,7 @@ A vague description of what we should do and what a feature was will do nothing 
 
 ## 11/11/2017
 ###  Mutian Wang
- 
+ - Courage: This week we encountered some bugs that lay deep inside the core of melon.js. To solve the issue, one of my team member and I digged into the source code and figured out a solution that we can reuse for all other similiar issues. Courage is the most important thing that drove us to achieve the goal.
 
 ###  Ruifeng Sheng
 
