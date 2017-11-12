@@ -33,28 +33,15 @@ game.PlayerEntity = me.Entity.extend({
      * update the entity
      */
     update: function(dt) {
-        if (me.input.isKeyPressed('left')) {
+        const isForward = me.input.isKeyPressed('right') ? 1 : (me.input.isKeyPressed('left') ? -1 : 0);
+        if (isForward !== 0) {
+            // moved
             // flip the sprite on horizontal axis
-            this.renderable.flipX(true);
-
+            this.renderable.flipX(isForward < 0);
             // update the entity velocity
-            this.body.vel.x -= this.body.accel.x * me.timer.tick;
-
+            this.body.vel.x = isForward * this.body.accel.x * me.timer.tick;
             // change to the walking animation
-            if (!this.renderable.isCurrentAnimation("walk")) {
-                this.renderable.setCurrentAnimation("walk");
-            }
-        } else if (me.input.isKeyPressed('right')) {
-            // unflip the sprite
-            this.renderable.flipX(false);
-
-            // update the entity velocity
-            this.body.vel.x += this.body.accel.x * me.timer.tick;
-
-            // change to the walking animation
-            if (!this.renderable.isCurrentAnimation("walk")) {
-                this.renderable.setCurrentAnimation("walk");
-            }
+            this.renderable.setCurrentAnimation("walk");
         } else {
             this.body.vel.x = 0;
 
@@ -62,17 +49,14 @@ game.PlayerEntity = me.Entity.extend({
             this.renderable.setCurrentAnimation("stand");
         }
 
-        if (me.input.isKeyPressed('jump')) {
-            // make sure we are not already jumping or falling
-            if (!this.body.jumping && !this.body.falling) {
-                // set current vel to the maximum defined value
-                // gravity will then do the rest
-                this.body.vel.y = -this.body.maxVel.y * 3 * me.timer.tick;
+        if (me.input.isKeyPressed('jump') && !this.body.jumping && !this.body.falling) {
+            // set current vel to the maximum defined value
+            // gravity will then do the rest
+            this.body.vel.y = -this.body.maxVel.y * 3 * me.timer.tick;
 
-                // set the jumping flag
-                this.body.jumping = true;
-                me.audio.play("jump");
-            }
+            // set the jumping flag
+            this.body.jumping = true;
+            me.audio.play("jump");
         }
         // apply physics to the body (this moves the entity)
         this.body.update(dt);
@@ -85,7 +69,7 @@ game.PlayerEntity = me.Entity.extend({
     },
 
     /**
-     * colision handler
+     * collision handler
      * (called when colliding with other objects)
      */
     onCollision: function(response, other) {
@@ -103,7 +87,7 @@ game.PlayerEntity = me.Entity.extend({
                         // Disable collision on the x axis
                         response.overlapV.x = 0;
 
-                        // Repond to the platform (it is solid)
+                        // Respond to the platform (it is solid)
                         return true;
                     }
 
@@ -124,12 +108,10 @@ game.PlayerEntity = me.Entity.extend({
 
                     if(game.data.score <= this.DEAD_SCORE)
                     {
-                        this.diablo_onDie();
+                        this.onCharacterDie();
                     }
                     return false;
                 }
-
-                // Fall through
             default:
                 // Do not respond to other objects (e.g. coins)
                 return false;
@@ -143,7 +125,7 @@ game.PlayerEntity = me.Entity.extend({
      * Do on player die (add prefix to avoid compatibility issue with future verison fo Melon)
      * (called when die condition is reached)
      */
-    diablo_onDie: function()
+    onCharacterDie: function()
     {
         // remove the player from the screen (to avoid continuous collision)
         me.game.world.removeChild(this);
@@ -195,7 +177,7 @@ game.CoinEntity = me.CollectableEntity.extend({
 });
 
 /**
- * Enenties that when touched will end the game.
+ * Entities that when touched will end the game.
  */
 game.DeathEntity = me.Entity.extend({
     init: function(x, y, settings) {
@@ -203,7 +185,7 @@ game.DeathEntity = me.Entity.extend({
         this._super(me.CollectableEntity, 'init', [x, y, settings]);
     },
     onCollision: function(response, other) {
-        other.diablo_onDie();
+        other.onCharacterDie();
         return false
     }
 })
