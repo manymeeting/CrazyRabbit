@@ -137,7 +137,7 @@ A vague description of what we should do and what a feature was will do nothing 
  - Courage: This week we encountered some bugs that lay deep inside the core of melon.js. To solve the issue, one of my team member and I digged into the source code and figured out a solution that we can reuse for all other similiar issues. Courage is the most important thing that drove us to achieve the goal.
 
 ###  Ruifeng Sheng
-
+- Coordinate: Due to different segments tend to work in isolation from one another and the achievement of overall objective suffers. For this week, designed a new enemy, and re-draw the main characters by the right size is my work. Since the first version can not be with our coding part. We realized the importance of coordination, at first we all focus on our own part and cause this satuiation. we will make all parts together next week. 
 
 ###  Zihan Ke
 
