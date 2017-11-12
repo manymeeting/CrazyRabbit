@@ -143,7 +143,7 @@ A vague description of what we should do and what a feature was will do nothing 
 
 
 ###  Weiyu Jin
-
+- During this week, my main work is to fix the map's bug, add element and delete element. Xiaoran Lin worked with me and we build a good communication. Also, Mutian Wang is a very good teacher, he taught me a lot which save me a lot of times. 
 
 ###  Xiaoran Lin
 
