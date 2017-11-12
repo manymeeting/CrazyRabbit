@@ -141,6 +141,8 @@ A vague description of what we should do and what a feature was will do nothing 
 
 ###  Zihan Ke
 
+- Added new Hud features, This help with the measure the number of collection coins. It's a key feature which we will be use this number to decide the life circle of main character. Next week we will add more maps as well as add another key feature, add CheckPoint. This will deal with swithing between diffrernt Maps.
+
 
 ###  Weiyu Jin
 - During this week, my main work is to fix the map's bug, add element and delete element. Xiaoran Lin worked with me and we build a good communication. Also, Mutian Wang is a very good teacher, he taught me a lot which save me a lot of times. 
