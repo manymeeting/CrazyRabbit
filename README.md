@@ -152,7 +152,7 @@ A vague description of what we should do and what a feature was will do nothing 
 - Communication. Last week we had video meetings on zoom. I've got some questions about the how our main player can die, can kill enemy and can have two lives. And Mutian Wang explained everything so perfect and was patient to questions from every teammate, I liked his style, and he created great team culture.
 
 ## Weekly Meeting Minutes
-### Date: 11/09/2017
+### Date: 11/11/2017
 ### Time: 10pm - 11pm
 #### 1. What did we do last week?
 - Created a UI opening for our game.
@@ -211,7 +211,7 @@ A vague description of what we should do and what a feature was will do nothing 
     - Team members are getting busy
     - Adopt Scrum practices
     
-### Date: 10/14/2017
+### Date: 10/07/2017
 ### Time: 6pm - 8pm
 #### 1. What did we do last week?
     - Dicided all the actions and movements of main character
@@ -223,7 +223,7 @@ A vague description of what we should do and what a feature was will do nothing 
     - We are short of designers
     - Get ready to switch from Kanban to Scrum
     
-### Date: 10/07/2017
+### Date: 09/30/2017
 ### Time: 6pm - 8pm
 #### 1. What did we do last week?
     - Defined the alignment of stage1 map
