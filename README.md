@@ -132,6 +132,39 @@ A vague description of what we should do and what a feature was will do nothing 
 
 - Communication. Last week my map design did not work, but my teammates pointed out my mistake and taught me how to fix that mistake. Then I did it. Mutian Wang was a nice teacher, he always knew what my problem was and what I was worried about, and since I wanted to fix my mistake, the communication went on so well.
 
+## 11/11/2017
+###  Mutian Wang
+ 
+
+###  Ruifeng Sheng
+
+
+###  Zihan Ke
+
+
+###  Weiyu Jin
+
+
+###  Xiaoran Lin
+
+- Communication. Last week we had video meetings on zoom. I've got some questions about the how our main player can die, can kill enemy and can have two lives. And Mutian Wang explained everything so perfect and was patient to questions from every teammate, I liked his style, and he created great team culture.
+
+## Weekly Meeting Minutes
+### Date: 11/09/2017
+### Time: 10pm - 11pm
+#### 1. What did we do last week?
+- Created a UI opening for our game.
+- Desiged 2 maps for our game.
+- Finished programming the death, kill action and lives for the main character.
+#### 2. What is the team going to do next week?
+- Created 2 more maps using different tileset from opengameart.org
+- Designed the switch among maps
+- Programming on character health and points
+- Continue Refactoring code to enhance extensibility
+#### 3. What are the current blockers/challenges our team is facing?
+- Implementation of level switch
+- Implementation of new character appearence
+
 ## Weekly Meeting Minutes
 ### Date: 11/4/2017
 ### Time: 6pm - 8pm
