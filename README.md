@@ -10,7 +10,7 @@
 
 
 - Link to Burndown Chart (Team's Google Sheet):
-<https://docs.google.com/spreadsheets/d/1bOqFtbCAKWRb6V3CDZZxL7GBya1ZYujjIxSTMR-aTg0/edit?usp=sharing>
+<https://docs.google.com/spreadsheets/d/1Wn1hBq4I3xxG6D2Lakg05LFs2jjCeg8k0kDDzzyNavQ/edit#gid=0>
 
 
 - Link to Cumulative Flow Diagram (Team's Google Sheet):
