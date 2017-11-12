@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" backgroundcolor="#a1cee1" nextobjectid="72">
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" backgroundcolor="#a1cee1" nextobjectid="76">
  <tileset firstgid="1" name="area01_level_tiles" tilewidth="32" tileheight="32" tilecount="140" columns="20">
   <image source="../img/map/area01_level_tiles.png" width="640" height="241"/>
  </tileset>
@@ -111,6 +111,8 @@
     <property name="image" type="file" value="../img/sprite/spinning_coin_gold.png"/>
    </properties>
   </object>
+  <object id="74" x="568" y="100" width="40" height="27"/>
+  <object id="75" x="577" y="356" width="33" height="29"/>
  </objectgroup>
  <imagelayer name="Image Layer 1"/>
  <objectgroup name="collision">
