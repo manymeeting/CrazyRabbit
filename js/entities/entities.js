@@ -44,7 +44,9 @@ game.PlayerEntity = me.Entity.extend({
             // update the entity velocity
             this.body.vel.x = isForward * this.body.accel.x * me.timer.tick;
             // change to the walking animation
-            this.renderable.setCurrentAnimation("walk");
+            if (!this.renderable.isCurrentAnimation("walk")) {
+                this.renderable.setCurrentAnimation("walk");
+            }
         } else {
             this.body.vel.x = 0;
 
