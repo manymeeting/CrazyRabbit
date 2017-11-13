@@ -33,7 +33,10 @@ game.PlayerEntity = me.Entity.extend({
      * update the entity
      */
     update: function(dt) {
+        // REVIEW: "const" is for constants, whose value is independant from conditions in the application. Please use let or var to define it.
         const isForward = me.input.isKeyPressed('right') ? 1 : (me.input.isKeyPressed('left') ? -1 : 0);
+        // REVIEW: Nice catch! The original code has some unecessary duplicate lines so it's a great idea to refactor it.
+        // To make it easier to understand, I think we can rename "isForward" to "direction".
         if (isForward !== 0) {
             // moved
             // flip the sprite on horizontal axis
@@ -49,6 +52,7 @@ game.PlayerEntity = me.Entity.extend({
             this.renderable.setCurrentAnimation("stand");
         }
 
+        // REVIEW: Nice refactoring here! Please also include the original comment :)
         if (me.input.isKeyPressed('jump') && !this.body.jumping && !this.body.falling) {
             // set current vel to the maximum defined value
             // gravity will then do the rest
@@ -125,6 +129,7 @@ game.PlayerEntity = me.Entity.extend({
      * Do on player die (add prefix to avoid compatibility issue with future verison fo Melon)
      * (called when die condition is reached)
      */
+    //REVIEW: I understand that this name looks pretty, however, the prefix was added to avoid compatibility issue (please see my comment above). Call me if you are not sure about what I mean.
     onCharacterDie: function()
     {
         // remove the player from the screen (to avoid continuous collision)
