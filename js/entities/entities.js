@@ -104,6 +104,7 @@ game.PlayerEntity = me.Entity.extend({
 
             case me.collision.types.ENEMY_OBJECT:
                 if ((response.overlapV.y > 0) && !this.body.jumping) {
+                    break;
                     // due to the implementation of me.Body.respondToCollision, we customize the collision response logic here and return false.
                     // e.g. when 0 < overlap.y < 1, respondToCollision will set this.falling to false, whereas we expect it to be true.
                     return false;
