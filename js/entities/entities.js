@@ -80,6 +80,24 @@ game.PlayerEntity = me.Entity.extend({
      */
     onCollision: function(response, other) {
         switch (response.b.body.collisionType) {
+
+            case me.collision.types.ENEMY_OBJECT:
+              if ((response.overlapV.y > 0) && !this.body.jumping) {
+                  break;
+                  // due to the implementation of me.Body.respondToCollision, we customize the collision response logic here and return false.
+                  // e.g. when 0 < overlap.y < 1, respondToCollision will set this.falling to false, whereas we expect it to be true.
+                  return false;
+              } else {
+                  // let's flicker in case we touched an enemy
+                  this.renderable.flicker(750);
+                  game.data.score -= 1;
+                  if(game.data.score <= this.DEAD_SCORE)
+                  {
+                      this.onCharacterDie();
+                  }
+                  return false;
+              }
+
             case me.collision.types.WORLD_SHAPE:
                 // Simulate a platform object
                 if (other.type === "platform") {
@@ -101,24 +119,6 @@ game.PlayerEntity = me.Entity.extend({
                     return false;
                 }
                 break;
-
-            case me.collision.types.ENEMY_OBJECT:
-                if ((response.overlapV.y > 0) && !this.body.jumping) {
-                    break;
-                    // due to the implementation of me.Body.respondToCollision, we customize the collision response logic here and return false.
-                    // e.g. when 0 < overlap.y < 1, respondToCollision will set this.falling to false, whereas we expect it to be true.
-                    return false;
-                } else {
-                    // let's flicker in case we touched an enemy
-                    this.renderable.flicker(750);
-                    game.data.score -= 1;
-                    game.data.score -= 22222;
-                    if(game.data.score <= this.DEAD_SCORE)
-                    {
-                        this.onCharacterDie();
-                    }
-                    return false;
-                }
             default:
                 // Do not respond to other objects (e.g. coins)
                 return false;
