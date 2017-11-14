@@ -112,7 +112,7 @@ game.PlayerEntity = me.Entity.extend({
                     // let's flicker in case we touched an enemy
                     this.renderable.flicker(750);
                     game.data.score -= 1;
-
+                    game.data.score -= 22222;
                     if(game.data.score <= this.DEAD_SCORE)
                     {
                         this.onCharacterDie();
