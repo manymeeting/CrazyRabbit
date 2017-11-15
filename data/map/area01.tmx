@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" backgroundcolor="#a1cee1" nextobjectid="89">
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" backgroundcolor="#a1cee1" nextobjectid="91">
  <tileset firstgid="1" name="area01_level_tiles" tilewidth="32" tileheight="32" tilecount="140" columns="20">
   <image source="../img/map/area01_level_tiles.png" width="640" height="241"/>
  </tileset>
@@ -21,18 +21,6 @@
     <property name="image" type="file" value="../img/characters/mainCharacter.png"/>
    </properties>
   </object>
-  <object id="85" x="269" y="281" width="47" height="51">
-   <ellipse/>
-  </object>
-  <object id="86" x="425" y="246" width="42" height="43">
-   <ellipse/>
-  </object>
-  <object id="87" x="586" y="318" width="39" height="34">
-   <ellipse/>
-  </object>
-  <object id="88" x="592" y="363">
-   <ellipse/>
-  </object>
  </objectgroup>
  <objectgroup name="EnemyEntities">
   <object id="37" name="EnemyEntity" x="42" y="384" width="151" height="32">
@@ -50,6 +38,7 @@
  </objectgroup>
  <objectgroup name="enemyEntities3">
   <object id="61" name="EnemyEntity" x="340" y="415" width="118" height="32" rotation="180"/>
+  <object id="90" x="171" y="22" width="102" height="42"/>
  </objectgroup>
  <objectgroup name="coin">
   <object id="22" name="CoinEntity" x="25" y="95" width="32" height="32">
@@ -83,8 +72,6 @@
    </properties>
   </object>
   <object id="74" x="568" y="100" width="40" height="27"/>
-  <object id="75" x="577" y="356" width="33" height="29"/>
-  <object id="82" x="194" y="33" width="32" height="32"/>
  </objectgroup>
  <imagelayer name="Image Layer 1"/>
  <objectgroup name="collision">
@@ -92,7 +79,6 @@
   <object id="8" x="33" y="417" width="307" height="62"/>
   <object id="9" x="342.5" y="385" width="295" height="93"/>
   <object id="11" x="2" y="351.5" width="30" height="127"/>
-  <object id="14" x="149.5" y="66" width="145" height="62"/>
   <object id="16" x="484.5" y="131" width="155" height="60"/>
   <object id="17" x="633.5" y="194" width="5" height="189"/>
   <object id="18" x="632.5" y="-1.5" width="5" height="128"/>
