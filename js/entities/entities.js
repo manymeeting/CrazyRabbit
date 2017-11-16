@@ -33,17 +33,14 @@ game.PlayerEntity = me.Entity.extend({
      * update the entity
      */
     update: function(dt) {
-        // REVIEW: "const" is for constants, whose value is independant from conditions in the application. Please use let or var to define it.
         const isForward = me.input.isKeyPressed('right') ? 1 : (me.input.isKeyPressed('left') ? -1 : 0);
-        // REVIEW: Nice catch! The original code has some unecessary duplicate lines so it's a great idea to refactor it.
-        // To make it easier to understand, I think we can rename "isForward" to "direction".
         if (isForward !== 0) {
             // moved
             // flip the sprite on horizontal axis
             this.renderable.flipX(isForward < 0);
             // update the entity velocity
             this.body.vel.x = isForward * this.body.accel.x * me.timer.tick;
-            // change to the walking animation
+            // change to the walking animation if not walking
             if (!this.renderable.isCurrentAnimation("walk")) {
                 this.renderable.setCurrentAnimation("walk");
             }
@@ -54,7 +51,7 @@ game.PlayerEntity = me.Entity.extend({
             this.renderable.setCurrentAnimation("stand");
         }
 
-        // REVIEW: Nice refactoring here! Please also include the original comment :)
+        // make sure we are not already jumping or falling
         if (me.input.isKeyPressed('jump') && !this.body.jumping && !this.body.falling) {
             // set current vel to the maximum defined value
             // gravity will then do the rest
@@ -93,7 +90,7 @@ game.PlayerEntity = me.Entity.extend({
                   game.data.score -= 1;
                   if(game.data.score <= this.DEAD_SCORE)
                   {
-                      this.onCharacterDie();
+                      this.onDie();
                   }
                   return false;
               }
@@ -129,11 +126,10 @@ game.PlayerEntity = me.Entity.extend({
     },
 
     /**
-     * Do on player die (add prefix to avoid compatibility issue with future verison fo Melon)
+     * Do on player die (add prefix to avoid compatibility issue with future version fo Melon)
      * (called when die condition is reached)
      */
-    //REVIEW: I understand that this name looks pretty, however, the prefix was added to avoid compatibility issue (please see my comment above). Call me if you are not sure about what I mean.
-    onCharacterDie: function()
+    onDie: function()
     {
         // remove the player from the screen (to avoid continuous collision)
         me.game.world.removeChild(this);
@@ -193,7 +189,7 @@ game.DeathEntity = me.Entity.extend({
         this._super(me.CollectableEntity, 'init', [x, y, settings]);
     },
     onCollision: function(response, other) {
-        other.onCharacterDie();
+        other.onDie();
         return false
     }
 })
