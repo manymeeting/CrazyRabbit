@@ -160,7 +160,7 @@ Object.defineProperty(game.PlayerEntity.prototype, "DEAD_SCORE", {
 });
 
 /**
- * Enenties that represent coins. The player is able to collect coins and accumulate its game score.
+ * Entities that represent coins. The player is able to collect coins and accumulate its game score.
  */
 game.CoinEntity = me.CollectableEntity.extend({
     // extending the init function is not mandatory
