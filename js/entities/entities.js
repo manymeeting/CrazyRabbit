@@ -221,7 +221,7 @@ game.EnemyEntity = me.Entity.extend({
         // set start/end position based on the initial area size
         x = this.pos.x;
         this.startX = x;
-        this.endX = x + width - settings.framewidth
+        this.endX = x + width - settings.framewidth;
         this.pos.x = x + width - settings.framewidth;
 
         // to remember which side we were walking
