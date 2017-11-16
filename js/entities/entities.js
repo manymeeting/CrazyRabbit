@@ -116,6 +116,11 @@ game.PlayerEntity = me.Entity.extend({
                     return false;
                 }
                 break;
+
+            case me.collision.types.USER:
+                // our custom "DeathEntity"
+                this.onDie();
+                return false;
             default:
                 // Do not respond to other objects (e.g. coins)
                 return false;
@@ -134,7 +139,7 @@ game.PlayerEntity = me.Entity.extend({
         // remove the player from the screen (to avoid continuous collision)
         me.game.world.removeChild(this);
         me.audio.fade("bgm2",1,0,10);
-        me.audio.play("death", false, function(){
+        me.audio.play("death", false, function() {
             // go back to menu on music ends
             me.state.change(me.state.MENU);
         });
@@ -187,10 +192,9 @@ game.DeathEntity = me.Entity.extend({
     init: function(x, y, settings) {
         // call the parent constructor
         this._super(me.CollectableEntity, 'init', [x, y, settings]);
-    },
-    onCollision: function(response, other) {
-        other.onDie();
-        return false
+
+        // set a custom USER type
+        this.body.collisionType = me.collision.types.USER;
     }
 })
 
