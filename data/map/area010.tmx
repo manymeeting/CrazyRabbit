@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" backgroundcolor="#a1cee1" nextobjectid="91">
+ <tileset firstgid="1" name="area01_level_tiles" tilewidth="32" tileheight="32" tilecount="140" columns="20">
+  <image source="../img/map/area01_level_tiles.png" width="640" height="241"/>
+ </tileset>
+ <tileset firstgid="141" source="area02_level_tiles.tsx"/>
+ <layer name="bg" width="20" height="15">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANEAAADRAAAA0QAAANEAAADRAAAA0QAAANEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0QAAANEAAAAsAAAALQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAAAABQAAABYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAABkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAABkAAAAFAAAABQAAAAUAAAAFAAAAFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAACAAAAAgAAAAIAAAACAAAAC0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH4AAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAAAAAAAZAAAAKwAAACsAAAArAAAAKwAAACsAAAArAAAAKwAAACsAAAArAAAAKwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAAYAAAAHAAAABgAAAAYAAAAHAAAABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAA
+  </data>
+ </layer>
+ <layer name="fg" width="20" height="15">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABRAAAAUgAAAFMAAABUAAAAVQAAAFYAAABXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXAAAAKwAAACsAAAArAAAAKwAAABYAAAAAAAAAAAAAABcAAAAEAAAAcAAAABYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsAAAACAAAAAgAAAAtAAAADgEAAA4BAAAOAQAADgEAAA4BAAAOAQAAAAAAAAAAAABDAAAAAAAAAAAAAAAAAAAAUQAAAFIAAABTAAAAVAAAAFUAAABWAAAAVwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAABoAAAArAAAAKwAAACsAAAArAAAAKwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXAAAABAAAAAUAAAAWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAACwAAAAAAAAAAAAAAAAAAAAAAAAAsAAAALQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXAAAAB4AAAAfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABcAAAAEAAAABQAAABYAAAAAAAAAAAAAABoAAAAQAAAAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAtAAAAAAAAAAAAAAAAAAAAAAAAACQAAAA5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABRAAAAUgAAAFMAAABUAAAAVQAAAFYAAABXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEEAAABBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABcAAAArAAAAKwAAACsAAAArAAAAKwAAACsAAAArAAAAKwAAACsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACsAAAArAAAAGwAAACkAAAApAAAABgAAAAcAAAAGAAAABwAAAAYAAAAHAAAABgAAAAcAAAAGAAAABwAAACkAAAAGAAAABwAAAAYAAAAHAAAAPQAAAAYAAAAHAAAABgAAAAcAAAAGAAAABwAAAAYAAAAHAAAA
+  </data>
+ </layer>
+ <objectgroup name="players">
+  <object id="1" name="mainPlayer" x="128" y="224" width="32" height="64">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" type="file" value="../img/characters/mainCharacter.png"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="EnemyEntities">
+  <object id="37" name="EnemyEntity" x="42" y="384" width="151" height="32">
+   <properties>
+    <property name="image" type="file" value="../img/sprite/wheelie_right.png"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="enemyEntites2">
+  <object id="46" name="EnemyEntity" x="403.478" y="349.699" width="151" height="32">
+   <properties>
+    <property name="image" type="file" value="../img/sprite/wheelie_right.png"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="enemyEntities3">
+  <object id="61" name="EnemyEntity" x="340" y="415" width="118" height="32" rotation="180"/>
+  <object id="90" x="171" y="22" width="102" height="42"/>
+ </objectgroup>
+ <objectgroup name="coin">
+  <object id="22" name="CoinEntity" x="25" y="95" width="32" height="32">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" type="file" value="../img/sprite/spinning_coin_gold.png"/>
+   </properties>
+  </object>
+  <object id="30" name="CoinEntity" x="500" y="95" width="32" height="32">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" type="file" value="../img/sprite/spinning_coin_gold.png"/>
+   </properties>
+  </object>
+  <object id="32" name="CoinEntity" x="524" y="227" width="32" height="32">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" type="file" value="../img/sprite/spinning_coin_gold.png"/>
+   </properties>
+  </object>
+  <object id="36" name="CoinEntity" x="300" y="158" width="32" height="32">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" type="file" value="../img/sprite/spinning_coin_gold.png"/>
+   </properties>
+  </object>
+  <object id="70" name="CoinEntity" x="331.704" y="84.7598" width="32" height="32">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" type="file" value="../img/sprite/spinning_coin_gold.png"/>
+   </properties>
+  </object>
+  <object id="74" x="568" y="100" width="40" height="27"/>
+ </objectgroup>
+ <imagelayer name="Image Layer 1"/>
+ <objectgroup name="collision">
+  <object id="4" x="1" y="131" width="62" height="158"/>
+  <object id="8" x="33" y="417" width="307" height="62"/>
+  <object id="9" x="342.5" y="385" width="295" height="93"/>
+  <object id="11" x="2" y="351.5" width="30" height="127"/>
+  <object id="16" x="484.5" y="131" width="155" height="60"/>
+  <object id="17" x="633.5" y="194" width="5" height="189"/>
+  <object id="18" x="632.5" y="-1.5" width="5" height="128"/>
+  <object id="19" x="1.5" y="0" width="5" height="128"/>
+  <object id="20" x="2.5" y="-2" width="633" height="3"/>
+ </objectgroup>
+</map>
