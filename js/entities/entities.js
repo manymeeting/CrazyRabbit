@@ -117,8 +117,7 @@ game.PlayerEntity = me.Entity.extend({
                 }
                 break;
 
-            case me.collision.types.USER:
-                // our custom "DeathEntity"
+            case game.collisionTypes.TOUCH_DEATH:
                 this.onDie();
                 return false;
             default:
@@ -193,8 +192,8 @@ game.DeathEntity = me.Entity.extend({
         // call the parent constructor
         this._super(me.CollectableEntity, 'init', [x, y, settings]);
 
-        // set a custom USER type
-        this.body.collisionType = me.collision.types.USER;
+        // set a custom collision type
+        this.body.collisionType = game.collisionTypes.TOUCH_DEATH;
     }
 })
 
