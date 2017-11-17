@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="60" height="15" tilewidth="32" tileheight="32" nextobjectid="159">
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="60" height="15" tilewidth="32" tileheight="32" nextobjectid="160">
  <tileset firstgid="1" source="area02_level_tiles.tsx"/>
  <layer name="sky" width="60" height="15">
   <data encoding="base64">
@@ -195,6 +195,15 @@
   </object>
   <object id="136" x="960.281" y="96.7559">
    <polyline points="0,0 31.7882,15.1984 351.917,15.3054 382.421,-0.107031 416.457,-31.7882"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="LevelEntity">
+  <object id="159" name="me.LevelEntity" x="1878" y="184" width="40" height="40">
+   <properties>
+    <property name="duration" type="int" value="250"/>
+    <property name="fade" value="#000000"/>
+    <property name="to" value="scroll1"/>
+   </properties>
   </object>
  </objectgroup>
 </map>
