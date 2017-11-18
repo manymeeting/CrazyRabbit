@@ -189,7 +189,7 @@
    <properties>
     <property name="duration" type="int" value="250"/>
     <property name="fade" value="#000000"/>
-    <property name="to" value="scroll1"/>
+    <property name="to" value="area02"/>
    </properties>
   </object>
  </objectgroup>
