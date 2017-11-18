@@ -206,7 +206,7 @@ game.DeathEntity = me.Entity.extend({
 game.EnemyEntity = me.Entity.extend({
     init: function(x, y, settings) {
         // define this here instead of tiled
-        settings.image = "wheelie_right";
+        settings.image = "snail";
 
         // save the area size defined in Tiled
         var width = settings.width;
