@@ -30,11 +30,12 @@ var game = {
         me.state.set(me.state.MENU, new game.TitleScreen());
         me.state.set(me.state.PLAY, new game.PlayScreen());
 
-        // add our player entity in the entity pool
+        // add our entities in the entity pool
         me.pool.register("mainPlayer", game.PlayerEntity);
         me.pool.register("CoinEntity", game.CoinEntity);
         me.pool.register("EnemyEntity", game.EnemyEntity);
         me.pool.register("DeathEntity",game.DeathEntity);
+        me.pool.register("MovingBlock0",game.MovingBlockEntity0);
 
         // enable the keyboard
         me.input.bindKey(me.input.KEY.LEFT,  "left");
