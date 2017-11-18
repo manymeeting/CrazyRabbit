@@ -11,5 +11,6 @@
 */
 
 game.collisionTypes = {
-    TOUCH_DEATH : me.collision.types.USER << 0 // Used when the player touches the water, fire or other "death" entities.
+    TOUCH_DEATH : me.collision.types.USER << 0, // Used when the player touches the water, fire or other "death" entities.
+    MOVING_BLOCK : me.collision.types.USER << 1, // Used when the player touches moving block entities.
 };
