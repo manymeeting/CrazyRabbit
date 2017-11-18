@@ -391,11 +391,6 @@ game.MovingBlockEntity0 = me.Entity.extend({
 
 
 
-
-
-
-
-
 /**
  * A block that falling.
  */
@@ -420,10 +415,10 @@ game.FallingBlockEntity = me.Entity.extend({
         this._super(me.Entity, 'init', [x, y, settings]);
 
         // set a custom collision type
-        this.body.collisionType = game.collisionTypes.MOVING_BLOCK;
+        this.body.collisionType = game.collisionTypes.TOUCH_DEATH;
 
         // set body gravity to 0 for this entity (otherwise it will fall immediately)
-        this.body.gravity = 1000;
+        this.body.gravity = 10;
 
         // set start/end position based on the initial area size
         x = this.pos.x;
