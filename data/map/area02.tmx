@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="60" height="15" tilewidth="32" tileheight="32" nextobjectid="162">
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="60" height="15" tilewidth="32" tileheight="32" nextobjectid="170">
  <tileset firstgid="1" source="area02_level_tiles.tsx"/>
  <layer name="sky" width="60" height="15">
   <data encoding="base64">
@@ -48,6 +48,9 @@
  </layer>
  <objectgroup name="movingblocks">
   <object id="160" name="MovingBlock0" x="1311.54" y="288.408" width="448" height="64"/>
+ </objectgroup>
+ <objectgroup name="fallingblocks" offsetx="47.4298" offsety="11.537">
+  <object id="169" name="Fallingblocks" x="776.823" y="-110.242" width="74.3494" height="62.8125"/>
  </objectgroup>
  <objectgroup name="enemies">
   <object id="5" name="EnemyEntity" x="577.204" y="190.495" width="192" height="64">
