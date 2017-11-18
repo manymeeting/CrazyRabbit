@@ -50,7 +50,7 @@
   <object id="160" name="MovingBlock0" x="1311.54" y="288.408" width="448" height="64"/>
  </objectgroup>
  <objectgroup name="fallingblocks" offsetx="47.4298" offsety="11.537">
-  <object id="169" name="Fallingblocks" x="-23.7278" y="106.643" width="74.3494" height="62.8125"/>
+  <object id="169" name="Fallingblocks" x="-30.2526" y="119.692" width="74.3494" height="62.8125"/>
  </objectgroup>
  <objectgroup name="enemies">
   <object id="5" name="EnemyEntity" x="577.204" y="190.495" width="192" height="64">
@@ -97,7 +97,7 @@
   </object>
  </objectgroup>
  <objectgroup name="players">
-  <object id="2" name="mainPlayer" x="32" y="288" width="32" height="64">
+  <object id="2" name="mainPlayer" x="72.7797" y="317.361" width="32" height="64">
    <properties>
     <property name="frameWidth" type="int" value="64"/>
     <property name="image" value="../img/characters/main_character.png"/>
