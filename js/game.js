@@ -36,6 +36,7 @@ var game = {
         me.pool.register("EnemyEntity", game.EnemyEntity);
         me.pool.register("DeathEntity",game.DeathEntity);
         me.pool.register("MovingBlock0",game.MovingBlockEntity0);
+        me.pool.register("Fallingblocks",game.FallingBlockEntity);
 
         // enable the keyboard
         me.input.bindKey(me.input.KEY.LEFT,  "left");
