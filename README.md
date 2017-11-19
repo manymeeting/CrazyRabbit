@@ -153,10 +153,10 @@ A vague description of what we should do and what a feature was will do nothing 
 
 ## 11/18/2017
 ###  Mutian Wang
-
+- Respect. In the past week, every team member did a wonderful job. We released a batch of important features such as "moving blocks", "flying enemies" and a new character design. The reason why we can achieve such a great progress is because that each of us repect other members' work, so we all ensured that our modification didn't break the current master branch, also, we take other members' work into consideration when we develop our own features. I'm confident that this great culture will reside in our team for a long time.
 
 ###  Ruifeng Sheng
-- focus.  Focus on a few things at a time. Having a clear role and clear goals within that role. Your job then is to do just that use your role to contribute to achieving the goal! At first part of this week, I focus on drawing all the elements.The rest of this week, I was trying to fix some bugs. Part of the magic of scrum is that it’s built around the very concept of focus.
+- Focus.  Focus on a few things at a time. Having a clear role and clear goals within that role. Your job then is to do just that use your role to contribute to achieving the goal! At first part of this week, I focus on drawing all the elements.The rest of this week, I was trying to fix some bugs. Part of the magic of scrum is that it’s built around the very concept of focus.
 
 
 ###  Zihan Ke
