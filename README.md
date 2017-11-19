@@ -164,6 +164,7 @@ A vague description of what we should do and what a feature was will do nothing 
 
 
 ###  Weiyu Jin
+- Communication. Last week, my goal is to modify the map details. It is very important to use communication skill to discuss with my teammate about the idea. I modify based on my teammates' idea which makes me easy to touch the goal and saved a lot of times.
 
 ###  Xiaoran Lin
 - Communication. Last week I pushed the most code I have ever done to the project. Because I learnt a lot from my teammates through great communication. In this way, I can design and extend the code. That's great experience!
