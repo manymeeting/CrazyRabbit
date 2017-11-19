@@ -151,6 +151,38 @@ A vague description of what we should do and what a feature was will do nothing 
 
 - Communication. Last week we had video meetings on zoom. I've got some questions about the how our main player can die, can kill enemy and can have two lives. And Mutian Wang explained everything so perfect and was patient to questions from every teammate, I liked his style, and he created great team culture.
 
+## 11/18/2017
+###  Mutian Wang
+
+
+###  Ruifeng Sheng
+ 
+
+###  Zihan Ke
+
+
+
+###  Weiyu Jin
+
+###  Xiaoran Lin
+- Communication. Last week I pushed the most code I have ever done to the project. Because I learnt a lot from my teammates through great communication. In this way, I can design and extend the code. That's great experience!
+
+## Weekly Meeting Minutes
+### Date: 11/18/2017
+### Time: 10pm - 11pm
+#### 1. What did we do last week?
+- Created a falling object
+- Created moving block
+- Created flying enemies
+- Implement level switch
+#### 2. What is the team going to do next week?
+- Created 2 more maps using different tileset from opengameart.org
+- Designed enemies that can go out of earth
+- Programming on character health and points
+- Continue Refactoring code to enhance extensibility
+#### 3. What are the current blockers/challenges our team is facing?
+- Implementation design pattern
+
 ## Weekly Meeting Minutes
 ### Date: 11/11/2017
 ### Time: 10pm - 11pm
