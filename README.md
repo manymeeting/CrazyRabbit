@@ -156,7 +156,8 @@ A vague description of what we should do and what a feature was will do nothing 
 
 
 ###  Ruifeng Sheng
- 
+- focus.  Focus on a few things at a time. Having a clear role and clear goals within that role. Your job then is to do just that use your role to contribute to achieving the goal! At first part of this week, I focus on drawing all the elements.The rest of this week, I was trying to fix some bugs. Part of the magic of scrum is that it’s built around the very concept of focus.
+
 
 ###  Zihan Ke
 
