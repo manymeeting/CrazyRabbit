@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="60" height="15" tilewidth="32" tileheight="32" nextobjectid="170">
+=======
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="60" height="15" tilewidth="32" tileheight="32" nextobjectid="163">
+>>>>>>> add floating enemy
  <tileset firstgid="1" source="area02_level_tiles.tsx"/>
  <layer name="sky" width="60" height="15">
   <data encoding="base64">
@@ -49,8 +53,13 @@
  <objectgroup name="movingblocks">
   <object id="160" name="MovingBlock0" x="1311.54" y="288.408" width="448" height="64"/>
  </objectgroup>
+<<<<<<< HEAD
  <objectgroup name="fallingblocks" offsetx="47.4298" offsety="11.537">
   <object id="169" name="Fallingblocks" x="-30.2526" y="119.692" width="74.3494" height="62.8125"/>
+=======
+ <objectgroup name="floatingenemies">
+  <object id="162" name="FloatingEnemy0" x="1275.62" y="231.841" width="90" height="40"/>
+>>>>>>> add floating enemy
  </objectgroup>
  <objectgroup name="enemies">
   <object id="5" name="EnemyEntity" x="577.204" y="190.495" width="192" height="64">
