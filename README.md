@@ -161,7 +161,7 @@ A vague description of what we should do and what a feature was will do nothing 
 
 ###  Zihan Ke
 
-
+Added new Hud features, This help with the measure the number of collection coins. It's a key feature which we will be use this number to decide the life circle of main character. Next week we will add more maps as well as add another key feature, add CheckPoint. This will deal with swithing between diffrernt Maps.
 
 ###  Weiyu Jin
 - Communication. Last week, my goal is to modify the map details. It is very important to use communication skill to discuss with my teammate about the idea. I modify based on my teammates' idea which makes me easy to touch the goal and saved a lot of times.
