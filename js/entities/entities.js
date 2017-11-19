@@ -477,7 +477,7 @@ game.FallingBlockEntity = me.Entity.extend({
 game.FloatingEnemyEntity0 = me.Entity.extend({
     init: function(x, y, settings) {
         // define this here instead of tiled
-        settings.image = "snail";
+        settings.image = "Flying enemy";
 
         // save the area size defined in Tiled
         var width = settings.width;
@@ -493,9 +493,6 @@ game.FloatingEnemyEntity0 = me.Entity.extend({
 
         // call the parent constructor
         this._super(me.Entity, 'init', [x, y, settings]);
-
-        // set a custom collision type
-        this.body.collisionType = game.collisionTypes.MOVING_BLOCK;
 
         // set body gravity to 0 for this entity (otherwise it will fall immediately)
         this.body.gravity = 0;
