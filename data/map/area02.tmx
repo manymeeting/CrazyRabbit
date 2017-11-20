@@ -50,7 +50,7 @@
   <object id="160" name="MovingBlock0" x="1311.54" y="288.408" width="448" height="64"/>
  </objectgroup>
  <objectgroup name="fallingblocks" offsetx="47.4298" offsety="11.537">
-  <object id="169" name="Fallingblocks" x="-30.2526" y="119.692" width="74.3494" height="62.8125"/>
+  <object id="169" name="Fallingblocks" x="1311.89" y="95.4335" width="160" height="64"/>
  </objectgroup>
  <objectgroup name="floatingenemies">
   <object id="170" name="FloatingEnemy0" x="1250" y="189" width="80" height="64"/>
