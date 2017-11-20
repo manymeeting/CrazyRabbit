@@ -430,21 +430,6 @@ game.FallingBlockEntity = me.Entity.extend({
      * update the enemy pos
      */
     update: function(dt) {
-
-        if (this.alive) {
-            if (this.walkLeft && this.pos.x <= this.startX) {
-                this.walkLeft = false;
-            } else if (!this.walkLeft && this.pos.x >= this.endX) {
-                this.walkLeft = true;
-            }
-
-            // make it move
-            this.renderable.flipX(this.walkLeft);
-            this.body.vel.x += (this.walkLeft) ? -this.body.accel.x * me.timer.tick : this.body.accel.x * me.timer.tick;
-        } else {
-            this.body.vel.x = 0;
-        }
-
         // update the body movement
         this.body.update(dt);
 
