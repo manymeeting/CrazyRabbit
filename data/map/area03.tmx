@@ -99,7 +99,7 @@
   <object id="49" name="EnemyEntity" x="1650" y="384.67" width="256" height="64"/>
   <object id="52" name="EnemyEntity" x="1676" y="126.67" width="240" height="64"/>
  </objectgroup>
- <objectgroup name="Coin">
+ <objectgroup name="CoinEntity">
   <object id="54" name="CoinEntity" x="42.6667" y="346.667" width="32" height="32" rotation="-315">
    <properties>
     <property name="image" type="file" value="../img/items/green_radish.png"/>
@@ -200,7 +200,7 @@
   <object id="78" name="MovingBlock0" x="1376" y="272" width="156" height="37.3333"/>
   <object id="80" name="MovingBlock0" x="1327.67" y="77.3333" width="256" height="37.3333"/>
  </objectgroup>
- <objectgroup name="Death">
+ <objectgroup name="DeathEntity">
   <object id="81" name="DeathEntit" x="1442.67" y="478.667">
    <polyline points="0,0 124,0"/>
   </object>
@@ -220,7 +220,7 @@
    <polyline points="0,0 61.3333,0"/>
   </object>
  </objectgroup>
- <objectgroup name="Level">
+ <objectgroup name="LevelEntity">
   <object id="86" name="me.LevelEntity" x="1857.33" y="22.6667" width="33.3333" height="38.6667">
    <properties>
     <property name="duration" type="int" value="250"/>
