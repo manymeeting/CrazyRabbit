@@ -201,7 +201,7 @@
   <object id="80" name="MovingBlock0" x="1327.67" y="77.3333" width="256" height="37.3333"/>
  </objectgroup>
  <objectgroup name="DeathEntity">
-  <object id="81" name="DeathEntit" x="1442.67" y="478.667">
+  <object id="81" name="DeathEntity" x="1442.67" y="478.667">
    <polyline points="0,0 124,0"/>
   </object>
   <object id="82" name="DeathEntity" x="417.333" y="478.667">
