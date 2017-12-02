@@ -195,7 +195,7 @@
    <properties>
     <property name="duration" type="int" value="250"/>
     <property name="fade" value="#000000"/>
-    <property name="to" value="area02"/>
+    <property name="to" value="area03"/>
    </properties>
   </object>
  </objectgroup>
