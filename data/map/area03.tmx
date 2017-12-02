@@ -102,97 +102,97 @@
  <objectgroup name="CoinEntity">
   <object id="54" name="CoinEntity" x="42.6667" y="346.667" width="32" height="32" rotation="-315">
    <properties>
-    <property name="image" type="file" value="../img/items/green_radish.png"/>
+    <property name="image" type="file" value="../img/items/green_radish_sm.png"/>
    </properties>
   </object>
   <object id="56" name="CoinEntity" x="64" y="108" width="32" height="32" rotation="-315">
    <properties>
-    <property name="image" type="file" value="../img/items/green_radish.png"/>
+    <property name="image" type="file" value="../img/items/green_radish_sm.png"/>
    </properties>
   </object>
   <object id="57" name="CoinEntity" x="221.333" y="9.33333" width="32" height="32" rotation="-315">
    <properties>
-    <property name="image" type="file" value="../img/items/green_radish.png"/>
+    <property name="image" type="file" value="../img/items/green_radish_sm.png"/>
    </properties>
   </object>
   <object id="60" name="CoinEntity" x="442.667" y="41.3333" width="32" height="32" rotation="-315">
    <properties>
-    <property name="image" type="file" value="../img/items/green_radish.png"/>
+    <property name="image" type="file" value="../img/items/green_radish_sm.png"/>
    </properties>
   </object>
   <object id="63" name="CoinEntity" x="477.333" y="282.667" width="32" height="32" rotation="-315">
    <properties>
-    <property name="image" type="file" value="../img/items/green_radish.png"/>
+    <property name="image" type="file" value="../img/items/green_radish_sm.png"/>
    </properties>
   </object>
   <object id="64" name="CoinEntity" x="358.667" y="377.333" width="32" height="32" rotation="-315">
    <properties>
-    <property name="image" type="file" value="../img/items/green_radish.png"/>
+    <property name="image" type="file" value="../img/items/green_radish_sm.png"/>
    </properties>
   </object>
   <object id="65" name="CoinEntity" x="625.333" y="396" width="32" height="32" rotation="-315">
    <properties>
-    <property name="image" type="file" value="../img/items/green_radish.png"/>
+    <property name="image" type="file" value="../img/items/green_radish_sm.png"/>
    </properties>
   </object>
   <object id="66" name="CoinEntity" x="868" y="292" width="32" height="32" rotation="-315">
    <properties>
-    <property name="image" type="file" value="../img/items/green_radish.png"/>
+    <property name="image" type="file" value="../img/items/green_radish_sm.png"/>
    </properties>
   </object>
   <object id="67" name="CoinEntity" x="846.667" y="136" width="32" height="32" rotation="-315">
    <properties>
-    <property name="image" type="file" value="../img/items/green_radish.png"/>
+    <property name="image" type="file" value="../img/items/green_radish_sm.png"/>
    </properties>
   </object>
   <object id="68" name="CoinEntity" x="973.333" y="49.3333" width="32" height="32" rotation="-315">
    <properties>
-    <property name="image" type="file" value="../img/items/green_radish.png"/>
+    <property name="image" type="file" value="../img/items/green_radish_sm.png"/>
    </properties>
   </object>
   <object id="69" name="CoinEntity" x="1229.33" y="46.6667" width="32" height="32" rotation="-315">
    <properties>
-    <property name="image" type="file" value="../img/items/green_radish.png"/>
+    <property name="image" type="file" value="../img/items/green_radish_sm.png"/>
    </properties>
   </object>
   <object id="70" name="CoinEntity" x="1157.33" y="166.667" width="32" height="32" rotation="-315">
    <properties>
-    <property name="image" type="file" value="../img/items/green_radish.png"/>
+    <property name="image" type="file" value="../img/items/green_radish_sm.png"/>
    </properties>
   </object>
   <object id="71" name="CoinEntity" x="1160" y="320" width="32" height="32" rotation="-315">
    <properties>
-    <property name="image" type="file" value="../img/items/green_radish.png"/>
+    <property name="image" type="file" value="../img/items/green_radish_sm.png"/>
    </properties>
   </object>
   <object id="72" name="CoinEntity" x="1252" y="288" width="32" height="32" rotation="-315">
    <properties>
-    <property name="image" type="file" value="../img/items/green_radish.png"/>
+    <property name="image" type="file" value="../img/items/green_radish_sm.png"/>
    </properties>
   </object>
   <object id="73" name="CoinEntity" x="1245.33" y="396" width="32" height="32" rotation="-315">
    <properties>
-    <property name="image" type="file" value="../img/items/green_radish.png"/>
+    <property name="image" type="file" value="../img/items/green_radish_sm.png"/>
    </properties>
   </object>
   <object id="74" name="CoinEntity" x="1565.33" y="381.333" width="32" height="32" rotation="-315">
    <properties>
-    <property name="image" type="file" value="../img/items/green_radish.png"/>
+    <property name="image" type="file" value="../img/items/green_radish_sm.png"/>
    </properties>
   </object>
   <object id="75" name="CoinEntity" x="1612" y="253.333" width="32" height="32" rotation="-315">
    <properties>
-    <property name="image" type="file" value="../img/items/green_radish.png"/>
+    <property name="image" type="file" value="../img/items/green_radish_sm.png"/>
    </properties>
   </object>
   <object id="76" name="CoinEntity" x="1625.33" y="129.333" width="32" height="32" rotation="-315">
    <properties>
-    <property name="image" type="file" value="../img/items/green_radish.png"/>
+    <property name="image" type="file" value="../img/items/green_radish_sm.png"/>
    </properties>
   </object>
   <object id="77" name="CoinEntity" x="1684" y="17.3333" width="32" height="32" rotation="-315">
    <properties>
-    <property name="image" type="file" value="../img/items/green_radish.png"/>
+    <property name="image" type="file" value="../img/items/green_radish_sm.png"/>
    </properties>
   </object>
  </objectgroup>
