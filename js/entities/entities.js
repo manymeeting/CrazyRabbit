@@ -451,7 +451,7 @@ game.FallingBlockEntity = me.Entity.extend({
 game.FloatingEnemyEntity0 = me.Entity.extend({
     init: function(x, y, settings) {
         // define this here instead of tiled
-        settings.image = "snail";
+        settings.image = "Flying enemy";
 
         // save the area size defined in Tiled
         var width = settings.width;
