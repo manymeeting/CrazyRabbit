@@ -48,6 +48,7 @@ var game = {
         // add our entities in the entity pool
         me.pool.register("mainPlayer", game.PlayerEntity);
         me.pool.register("CoinEntity", game.CoinEntity);
+        me.pool.register("TimerEntity", game.TimerEntity);
         me.pool.register("EnemyEntity", game.EnemyEntity);
         me.pool.register("DeathEntity",game.DeathEntity);
         me.pool.register("MovingBlock0",game.WinEntity);
@@ -62,6 +63,9 @@ var game = {
         me.input.bindKey(me.input.KEY.LEFT,  "left");
         me.input.bindKey(me.input.KEY.RIGHT, "right");
         me.input.bindKey(me.input.KEY.X,     "jump", true);
+
+        // initialize facades
+        game.FreezerFacade = new game.FreezerFacade();
 
         // Start the game.
         me.state.change(me.state.MENU);
