@@ -50,7 +50,7 @@
   <object id="160" name="MovingBlock0" x="1311.54" y="288.408" width="448" height="64"/>
  </objectgroup>
  <objectgroup name="floatingenemies">
-  <object id="170" name="FloatingEnemy0" x="9.13343" y="92.8581" width="254.337" height="40.926"/>
+  <object id="170" name="FloatingEnemy0" x="9.13343" y="92.8581" width="420.982" height="40.926"/>
  </objectgroup>
  <objectgroup name="enemies">
   <object id="5" name="EnemyEntity" x="577.204" y="190.495" width="192" height="64">
