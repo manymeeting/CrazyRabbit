@@ -49,11 +49,8 @@
  <objectgroup name="movingblocks">
   <object id="160" name="MovingBlock0" x="1311.54" y="288.408" width="448" height="64"/>
  </objectgroup>
- <objectgroup name="fallingblocks" offsetx="47.4298" offsety="11.537">
-  <object id="169" name="Fallingblocks" x="1311.89" y="95.4335" width="160" height="64"/>
- </objectgroup>
  <objectgroup name="floatingenemies">
-  <object id="170" name="FloatingEnemy0" x="1250" y="189" width="80" height="64"/>
+  <object id="170" name="FloatingEnemy0" x="70.664" y="321.034" width="254.337" height="40.926"/>
  </objectgroup>
  <objectgroup name="enemies">
   <object id="5" name="EnemyEntity" x="577.204" y="190.495" width="192" height="64">
