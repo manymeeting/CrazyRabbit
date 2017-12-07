@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="60" height="15" tilewidth="32" tileheight="32" nextobjectid="171">
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="60" height="15" tilewidth="32" tileheight="32" nextobjectid="179">
  <tileset firstgid="1" source="area02_level_tiles.tsx"/>
  <layer name="sky" width="60" height="15">
   <data encoding="base64">
@@ -50,7 +50,7 @@
   <object id="160" name="MovingBlock0" x="1311.54" y="288.408" width="448" height="64"/>
  </objectgroup>
  <objectgroup name="floatingenemies">
-  <object id="170" name="FloatingEnemy0" x="92.4561" y="278.732" width="254.337" height="40.926"/>
+  <object id="170" name="FloatingEnemy0" x="9.13343" y="92.8581" width="254.337" height="40.926"/>
  </objectgroup>
  <objectgroup name="enemies">
   <object id="5" name="EnemyEntity" x="577.204" y="190.495" width="192" height="64">
@@ -188,10 +188,17 @@
   </object>
  </objectgroup>
  <objectgroup name="LevelEntity">
-  <object id="159" name="me.LevelEntity" x="1878" y="184" width="40" height="40">
+  <object id="159" name="me.LevelEntity" x="197.446" y="185.282" width="40" height="40">
    <properties>
     <property name="duration" type="int" value="250"/>
-    <property name="fade" value="#000000"/>
+    <property name="fade" value="#000111"/>
+    <property name="to" value="area03"/>
+   </properties>
+  </object>
+  <object id="178" name="me.LevelEntity" x="1875.91" y="171.001" width="40" height="40">
+   <properties>
+    <property name="duration" type="int" value="250"/>
+    <property name="fade" value="#000111"/>
     <property name="to" value="area03"/>
    </properties>
   </object>

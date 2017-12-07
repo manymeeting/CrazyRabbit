@@ -94,11 +94,6 @@
     <property name="image" type="file" value="../img/items/green_radish_sm.png"/>
    </properties>
   </object>
-  <object id="64" name="CoinEntity" x="358.667" y="377.333" width="32" height="32" rotation="-315">
-   <properties>
-    <property name="image" type="file" value="../img/items/green_radish_sm.png"/>
-   </properties>
-  </object>
   <object id="65" name="CoinEntity" x="625.333" y="396" width="32" height="32" rotation="-315">
    <properties>
     <property name="image" type="file" value="../img/items/green_radish_sm.png"/>
@@ -166,7 +161,7 @@
   </object>
  </objectgroup>
  <objectgroup name="players">
-  <object id="38" name="mainPlayer" x="27.67" y="278" width="32" height="64">
+  <object id="38" name="mainPlayer" x="387.67" y="378" width="32" height="64">
    <properties>
     <property name="frameWidth" type="int" value="64"/>
     <property name="image" type="file" value="../img/characters/main_character.png"/>
