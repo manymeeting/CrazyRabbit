@@ -30,7 +30,7 @@ game.WinScreen = me.ScreenObject.extend({
                 this.scrollertween = new me.Tween(this).to({
                     scrollerpos: -1200
                 }, 10000).onComplete(this.scrollover.bind(this)).start();
-                
+
             },
 
             // some callback for the tween objects
@@ -63,6 +63,7 @@ game.WinScreen = me.ScreenObject.extend({
             if (action === "enter") {
                 // play something on tap / enter
                 // this will unlock audio on mobile devices
+                me.audio.fade("winner",1,0,10);
                 me.audio.play("cling");
                 me.state.change(me.state.PLAY);
             }
