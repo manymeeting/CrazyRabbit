@@ -140,7 +140,7 @@ game.PlayerEntity = me.Entity.extend({
         // remove the player from the screen (to avoid continuous collision)
         me.game.world.removeChild(this);
         me.audio.fade("bgm2",1,0,10);
-        me.audio.play("winner", false, function() {
+        me.audio.play("death", false, function() {
             // go back to menu on music ends
             me.state.change(me.state.MENU);
         });
