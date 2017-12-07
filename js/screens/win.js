@@ -24,7 +24,7 @@ game.WinScreen = me.ScreenObject.extend({
                 // font for the scrolling text
                 this.font = new me.BitmapFont(me.loader.getBinary('PressStart2P'), me.loader.getImage('PressStart2P'));
 
-                this.scroller = "CONGRATULATIONS! YOU WIN";
+                this.scroller = "CONGRATULATIONS! YOU GRADUATED";
                 this.scrollerpos = 600;
                 // a tween to animate the arrow
                 this.scrollertween = new me.Tween(this).to({
@@ -47,7 +47,7 @@ game.WinScreen = me.ScreenObject.extend({
             },
 
             draw: function(renderer) {
-                this.font.draw(renderer, "PRESS ENTER TO TRY AGAIN, YOU CAN DO EVEN BETTER!", 20, 240);
+                this.font.draw(renderer, "PRESS ENTER TO BE AWESOME AGAIN!", 20, 240);
                 this.font.draw(renderer, this.scroller, this.scrollerpos, 440);
             },
             onDestroyEvent: function() {
