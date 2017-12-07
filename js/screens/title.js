@@ -66,6 +66,7 @@ game.TitleScreen = me.ScreenObject.extend({
             if (action === "enter") {
                 // play something on tap / enter
                 // this will unlock audio on mobile devices
+                me.audio.fade("dashBoardBGM",1,0,10);
                 me.audio.play("cling");
                 me.state.change(me.state.PLAY);
             }
