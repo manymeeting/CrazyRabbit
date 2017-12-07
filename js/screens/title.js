@@ -15,6 +15,9 @@ game.TitleScreen = me.ScreenObject.extend({
         // add to the world container
         me.game.world.addChild(backgroundImage, 1);
 
+        //play game start music
+        me.audio.play("dashBoardBGM", true);
+
         // add a new renderable component with the scrolling text
         me.game.world.addChild(new(me.Renderable.extend({
             // constructor
@@ -30,7 +33,7 @@ game.TitleScreen = me.ScreenObject.extend({
                 this.scrollertween = new me.Tween(this).to({
                     scrollerpos: -1200
                 }, 10000).onComplete(this.scrollover.bind(this)).start();
-                
+
             },
 
             // some callback for the tween objects

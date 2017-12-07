@@ -43,8 +43,6 @@ game.WinEntity = me.CollectableEntity.extend({
             // remove the player from the screen (to avoid continuous collision)
             me.game.world.removeChild(this);
             me.audio.fade("bgm2",1,0,10);
-            me.audio.play("winner", false, function() {
-
-            });
+            me.audio.play("winner", false);
         }
 });
