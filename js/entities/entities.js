@@ -481,7 +481,7 @@ game.FloatingEnemyEntity0 = me.Entity.extend({
         this.walkLeft = false;
 
         // walking & jumping speed
-        this.body.setVelocity(5, 12);
+        this.body.setVelocity(4, 10);
 
     },
     update: function(dt) {
@@ -495,7 +495,7 @@ game.FloatingEnemyEntity0 = me.Entity.extend({
 
             // make it walk
             this.renderable.flipX(this.walkLeft);
-            this.body.vel.x += (this.walkLeft) ? -this.body.accel.x * me.、timer.tick : this.body.accel.x * me.timer.tick;
+            this.body.vel.x += (this.walkLeft) ? -this.body.accel.x * me.timer.tick : this.body.accel.x * me.timer.tick;
         } else {
             this.body.vel.x = 0;
         }
