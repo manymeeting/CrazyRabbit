@@ -451,7 +451,7 @@ game.FallingBlockEntity = me.Entity.extend({
 game.FloatingEnemyEntity0 = me.Entity.extend({
     init: function(x, y, settings) {
         // define this here instead of tiled
-        settings.image = "bird";
+        settings.image = "bird1";
 
         // save the area size defined in Tiled
         var width = settings.width;
@@ -459,7 +459,7 @@ game.FloatingEnemyEntity0 = me.Entity.extend({
 
         // adjust the size setting information to match the sprite size
         // so that the entity object is created with the right size
-        settings.framewidth = settings.width = 100;
+        settings.framewidth = settings.width = 80;
         settings.frameheight = settings.height = 64;
 
         // redefine the default shape (used to define path) with a shape matching the renderable
