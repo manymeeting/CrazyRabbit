@@ -31,10 +31,8 @@ game.WinEntity = me.CollectableEntity.extend({
         this.winnerMusicControl();
         // remove it
         me.game.world.removeChild(this);
-
         // win when collected
         me.state.change(me.state.GAME_END);
-
         return false;
     },
 
