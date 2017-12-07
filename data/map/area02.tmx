@@ -188,13 +188,6 @@
   </object>
  </objectgroup>
  <objectgroup name="LevelEntity">
-  <object id="159" name="me.LevelEntity" x="197.446" y="185.282" width="40" height="40">
-   <properties>
-    <property name="duration" type="int" value="250"/>
-    <property name="fade" value="#000111"/>
-    <property name="to" value="area03"/>
-   </properties>
-  </object>
   <object id="178" name="me.LevelEntity" x="1875.91" y="171.001" width="40" height="40">
    <properties>
     <property name="duration" type="int" value="250"/>
