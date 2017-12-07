@@ -52,8 +52,17 @@ me.BasicEnemyEntity = me.Entity.extend({
         }
         // make all other objects solid
         return true;
-    }
+    },
 
+    changeVelByRatio: function(ratio){
+        // walking & jumping speed
+        this.body.setVelocity(ratio * this.velocity.x, ratio * this.velocity.y);
+    },
+
+    changeVelocity: function(vel){
+        // walking & jumping speed
+        this.body.setVelocity(vel.x, vel.y);
+    },
 
 });
 
@@ -74,6 +83,7 @@ Object.defineProperty(me.BasicEnemyEntity.prototype, "lifePoint", {
  * Entities that represent general enemies.
  */
 game.EnemyEntity = me.BasicEnemyEntity.extend({
+
     init: function(x, y, settings) {
         // define this here instead of tiled
         settings.image = "snail";
@@ -103,17 +113,23 @@ game.EnemyEntity = me.BasicEnemyEntity.extend({
         this.walkLeft = false;
 
         // walking & jumping speed
-        this.body.setVelocity(4, 6);
+        this.body.setVelocity(this.velocity.x, this.velocity.y);
 
     }
 
 });
+
+game.EnemyEntity.prototype.velocity = {
+    x: 4,
+    y: 6
+}
 
 
 /**
  * An enemy object that floats and moves.
  */
 game.FloatingEnemyEntity0 = me.BasicEnemyEntity.extend({
+
     init: function(x, y, settings) {
         // define this here instead of tiled
         settings.image = "bird1";
@@ -146,11 +162,14 @@ game.FloatingEnemyEntity0 = me.BasicEnemyEntity.extend({
         this.walkLeft = false;
 
         // walking & jumping speed
-        this.body.setVelocity(4, 10);
+        this.body.setVelocity(this.velocity.x, this.velocity.y);
 
     }
 });
-
+game.FloatingEnemyEntity0.prototype.velocity = {
+    x: 4,
+    y: 10
+}
 
 /**
  * Life point of the enemy
