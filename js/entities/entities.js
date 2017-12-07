@@ -484,7 +484,31 @@ game.FloatingEnemyEntity0 = me.Entity.extend({
         this.body.setVelocity(4, 10);
 
     },
-    
+    update: function(dt) {
+
+        if (this.alive) {
+            if (this.walkLeft && this.pos.x <= this.startX) {
+                this.walkLeft = false;
+            } else if (!this.walkLeft && this.pos.x >= this.endX) {
+                this.walkLeft = true;
+            }
+
+            // make it walk
+            this.renderable.flipX(this.walkLeft);
+            this.body.vel.x += (this.walkLeft) ? -this.body.accel.x * me.timer.tick : this.body.accel.x * me.timer.tick;
+        } else {
+            this.body.vel.x = 0;
+        }
+
+        // update the body movement
+        this.body.update(dt);
+
+        // handle collisions against other shapes
+        me.collision.check(this);
+
+        // return true if we moved or if the renderable was updated
+        return (this._super(me.Entity, 'update', [dt]) || this.body.vel.x !== 0 || this.body.vel.y !== 0);
+    },
     onCollision: function(response, other) {
         if (response.b.body.collisionType !== me.collision.types.WORLD_SHAPE) {
             // res.y > 0 means touched by something on the bottom
