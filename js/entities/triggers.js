@@ -28,7 +28,7 @@ game.WinEntity = me.CollectableEntity.extend({
     onCollision: function(response, other) {
         // make sure it cannot be collected "again"
         this.body.setCollisionMask(me.collision.types.NO_OBJECT);
-
+        this.winnerMusicControl();
         // remove it
         me.game.world.removeChild(this);
 
@@ -36,5 +36,15 @@ game.WinEntity = me.CollectableEntity.extend({
         me.state.change(me.state.GAME_END);
 
         return false;
-    }
+    },
+
+    winnerMusicControl: function()
+        {
+            // remove the player from the screen (to avoid continuous collision)
+            me.game.world.removeChild(this);
+            me.audio.fade("bgm2",1,0,10);
+            me.audio.play("winner", false, function() {
+
+            });
+        }
 });
