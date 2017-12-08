@@ -97,6 +97,3 @@
 	game.VulnerablePlayerState = VulnerablePlayerState;
 	game.GreedyPlayerState = GreedyPlayerState;
 })();
-
-
-
