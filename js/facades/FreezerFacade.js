@@ -6,7 +6,7 @@
 		this._floatingEnemyEntity0s = [];
 		this._movingBlockEntity0s = [];
 	}
-	
+
 	FreezerFacade.prototype.pauseFor3S = function()
 	{
 		let _enemyEnties = this._enemyEnties;
@@ -30,4 +30,4 @@
 	// export this class
 	game.FreezerFacade = FreezerFacade;
 
-})()
+})();
