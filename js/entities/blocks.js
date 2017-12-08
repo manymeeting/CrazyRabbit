@@ -14,7 +14,7 @@ game.MovingBlockEntity0 = me.Entity.extend({
 
         // adjust the size setting information to match the sprite size
         // so that the entity object is created with the right size
-        settings.framewidth = settings.width = 64;
+        settings.framewidth = settings.width = 138;
         settings.frameheight = settings.height = 64;
 
         // redefine the default shape (used to define path) with a shape matching the renderable
@@ -39,7 +39,7 @@ game.MovingBlockEntity0 = me.Entity.extend({
         this.walkLeft = false;
 
         // walking & jumping speed
-        this.body.setVelocity(10, 6);
+        this.body.setVelocity(4, 6);
 
     },
 
