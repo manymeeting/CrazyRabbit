@@ -83,9 +83,8 @@ game.PlayerEntity = me.Entity.extend({
      */
     onCollision: function(response, other) {
         switch (response.b.body.collisionType) {
-
             case me.collision.types.ENEMY_OBJECT:
-              return this.playerContext.respondToEnemy(response, other);
+                return this.playerContext.respondToEnemy(response, other);
             case me.collision.types.WORLD_SHAPE:
                 // Simulate a platform object
                 if (other.type === "platform") {
@@ -107,7 +106,8 @@ game.PlayerEntity = me.Entity.extend({
                     return false;
                 }
                 break;
-
+            case game.collisionTypes.MAGIC_ITEM:  
+                return this.playerContext.respondToMagicItem(response, other);
             case game.collisionTypes.TOUCH_DEATH:
                 this.onDie();
                 return false;

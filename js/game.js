@@ -48,6 +48,7 @@ var game = {
         // add our entities in the entity pool
         me.pool.register("mainPlayer", game.PlayerEntity);
         me.pool.register("CoinEntity", game.CoinEntity);
+        me.pool.register("MagicItemEntity",game.MagicItemEntity);
         me.pool.register("TimerEntity", game.TimerEntity);
         me.pool.register("EnemyEntity", game.EnemyEntity);
         me.pool.register("DeathEntity",game.DeathEntity);

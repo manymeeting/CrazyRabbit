@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="60" height="15" tilewidth="32" tileheight="32" nextobjectid="113">
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="60" height="15" tilewidth="32" tileheight="32" nextobjectid="116">
  <properties>
   <property name="ratio" type="float" value="0.85"/>
  </properties>
@@ -173,7 +173,12 @@
   </object>
  </objectgroup>
  <objectgroup name="MagicItem">
-  <object id="111" name="MagicItem" x="351.78" y="159.614" width="64" height="64" rotation="-315">
+  <object id="111" name="MagicItemEntity" x="351.78" y="159.614" width="64" height="64" rotation="-315">
+   <properties>
+    <property name="image" value="/Users/michaelwang/Documents/workspace/SJSU/CMPE202_Diablo/data/img/items/red_radish_sm.png"/>
+   </properties>
+  </object>
+  <object id="115" name="MagicItemEntity" x="1122.05" y="2.65295" width="64" height="64" rotation="-315">
    <properties>
     <property name="image" value="/Users/michaelwang/Documents/workspace/SJSU/CMPE202_Diablo/data/img/items/red_radish_sm.png"/>
    </properties>
