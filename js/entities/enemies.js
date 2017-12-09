@@ -134,7 +134,7 @@ game.FloatingEnemyEntity0 = me.BasicEnemyEntity.extend({
 
     init: function(x, y, settings) {
         // define this here instead of tiled
-        settings.image = "bird1";
+        settings.image = "bird2";
 
         // save the area size defined in Tiled
         var width = settings.width;
@@ -142,8 +142,8 @@ game.FloatingEnemyEntity0 = me.BasicEnemyEntity.extend({
 
         // adjust the size setting information to match the sprite size
         // so that the entity object is created with the right size
-        settings.framewidth = settings.width = 80;
-        settings.frameheight = settings.height = 64;
+        settings.framewidth = settings.width = 40;
+        settings.frameheight = settings.height = 32;
 
         // redefine the default shape (used to define path) with a shape matching the renderable
         settings.shapes[0] = new me.Rect(0, 0, settings.framewidth, settings.frameheight);
