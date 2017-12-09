@@ -1,4 +1,5 @@
 (function() {
+	//definition of PlayerState
 	PlayerState = function() {
 		this._context = null;
 	};
@@ -12,6 +13,8 @@
 
 	PlayerState.prototype.respondToMagicItem = function(response, other) {};
 
+
+	//definition of PalyerContext
 	PlayerContext = function(playerEntity) {
 		this._entity = playerEntity;
 		this.VULNERABLE = new VulnerablePlayerState();
@@ -41,7 +44,7 @@
 		return this._state.respondToCoins(response, other);
 	}
 
-
+	//definition of VulnerablePalyerState
 	VulnerablePlayerState = function(){}
 	VulnerablePlayerState.prototype = new PlayerState();
 	VulnerablePlayerState.prototype.constructor = VulnerablePlayerState;
@@ -68,6 +71,8 @@
 		this._context.setState(this._context.GREEDY);
 	}
 
+
+	//definition of GreedyPalyerState
 	GreedyPlayerState = function(){};
 	GreedyPlayerState.prototype = new PlayerState();
 	GreedyPlayerState.prototype.constructor = GreedyPlayerState;
