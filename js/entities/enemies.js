@@ -133,7 +133,7 @@ game.FloatingEnemyEntity0 = me.BasicEnemyEntity.extend({
 
     init: function(x, y, settings) {
         // define this here instead of tiled
-        settings.image = "bird1";
+        settings.image = "bird2";
 
         // save the area size defined in Tiled
         var width = settings.width;
