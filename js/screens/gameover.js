@@ -16,7 +16,7 @@ game.GameOverScreen = me.ScreenObject.extend({
         me.game.world.addChild(backgroundImage, 1);
 
         //play game start music
-        me.audio.play("death", true);
+        me.audio.play("gameover", true);
 
         // add a new renderable component with the scrolling text
         me.game.world.addChild(new(me.Renderable.extend({
