@@ -15,6 +15,9 @@ game.GameOverScreen = me.ScreenObject.extend({
         // add to the world container
         me.game.world.addChild(backgroundImage, 1);
 
+        //play game over music
+        me.audio.play("gameover", true);
+
         // add a new renderable component with the scrolling text
         me.game.world.addChild(new(me.Renderable.extend({
             // constructor
@@ -26,6 +29,7 @@ game.GameOverScreen = me.ScreenObject.extend({
 
                 this.scroller = "YOU ARE DEAD!";
                 this.scrollerpos = 600;
+
                 // a tween to animate the arrow
                 this.scrollertween = new me.Tween(this).to({
                     scrollerpos: -1200
@@ -53,6 +57,7 @@ game.GameOverScreen = me.ScreenObject.extend({
             onDestroyEvent: function() {
                 //just in case
                 this.scrollertween.stop();
+                // this.audio.stopTrack();
             }
         })), 2);
 
@@ -63,7 +68,7 @@ game.GameOverScreen = me.ScreenObject.extend({
             if (action === "enter") {
                 // play something on tap / enter
                 // this will unlock audio on mobile devices
-                me.audio.fade("death",1,0,10);
+                me.audio.fade("gameover",1,0,10);
                 me.audio.play("cling");
                 me.state.change(me.state.MENU);
             }
