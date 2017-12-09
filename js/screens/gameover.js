@@ -57,7 +57,6 @@ game.GameOverScreen = me.ScreenObject.extend({
             onDestroyEvent: function() {
                 //just in case
                 this.scrollertween.stop();
-                // this.audio.stopTrack();
             }
         })), 2);
 
