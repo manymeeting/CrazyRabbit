@@ -12,14 +12,18 @@ game.CoinEntity = me.CollectableEntity.extend({
     // this function is called by the engine, when
     // an object is touched by something (here collected)
     onCollision: function(response, other) {
-        // do something when collected
-        game.data.score += 10;
-        // make sure it cannot be collected "again"
-        this.body.setCollisionMask(me.collision.types.NO_OBJECT);
 
-        // remove it
-        me.game.world.removeChild(this);
-        return false;
+        if (response.b.body.collisionType !== me.collision.types.ENEMY_OBJECT) {
+            // do something when collected
+            game.data.score += 10;
+            // make sure it cannot be collected "again"
+            this.body.setCollisionMask(me.collision.types.NO_OBJECT);
+
+            // remove it
+            me.game.world.removeChild(this);
+            return false;
+        }
+
     }
 });
 
