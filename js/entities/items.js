@@ -17,7 +17,7 @@ game.CoinEntity = me.CollectableEntity.extend({
             game.data.score += 10;
             // make sure it cannot be collected "again"
             this.body.setCollisionMask(me.collision.types.NO_OBJECT);
-            console.log(1);
+
             // remove it
             me.game.world.removeChild(this);
             return false;
