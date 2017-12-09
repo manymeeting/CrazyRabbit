@@ -10,26 +10,7 @@ game.DeathEntity = me.Entity.extend({
         this.body.collisionType = game.collisionTypes.TOUCH_DEATH;
     },
 
-    // this function is called by the engine, when
-    // an object is touched by something
-    onCollision: function(response, other) {
-        // make sure it cannot be collected "again"
-        this.body.setCollisionMask(me.collision.types.NO_OBJECT);
-        this.deathMusicControl();
-        // remove it
-        me.game.world.removeChild(this);
-        // win when collected
-        me.state.change(me.state.GAME_END);
-        return false;
-    },
 
-    deathMusicControl: function()
-    {
-        // remove the player from the screen (to avoid continuous collision)
-        me.game.world.removeChild(this);
-        me.audio.fade("bgm2",1,0,10);
-        me.audio.play("death", false);
-    }
 })
 
 
@@ -57,11 +38,10 @@ game.WinEntity = me.CollectableEntity.extend({
         return false;
     },
 
-    winnerMusicControl: function()
-        {
-            // remove the player from the screen (to avoid continuous collision)
-            me.game.world.removeChild(this);
-            me.audio.fade("bgm2",1,0,10);
-            me.audio.play("winner", false);
-        }
+    winnerMusicControl: function() {
+        // remove the player from the screen (to avoid continuous collision)
+        me.game.world.removeChild(this);
+        me.audio.fade("bgm2",1,0,10);
+        me.audio.play("winner", false);
+    }
 });

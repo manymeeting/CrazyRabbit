@@ -10,8 +10,7 @@ game.GameOverScreen = me.ScreenObject.extend({
 
         // position and scale to fit with the viewport size
         backgroundImage.anchorPoint.set(0, 0);
-        backgroundImage.scale(me.game.viewport.width / backgroundImage.width, me.game.viewport.height
-            / backgroundImage.height);
+        backgroundImage.scale(me.game.viewport.width / backgroundImage.width, me.game.viewport.height / backgroundImage.height);
 
         // add to the world container
         me.game.world.addChild(backgroundImage, 1);
@@ -28,7 +27,7 @@ game.GameOverScreen = me.ScreenObject.extend({
                 // font for the scrolling text
                 this.font = new me.BitmapFont(me.loader.getBinary('PressStart2P'), me.loader.getImage('PressStart2P'));
 
-                this.scroller = "A CRAZY RABBIT HAS GONE CRAZY!";
+                this.scroller = "YOU ARE DEAD!";
                 this.scrollerpos = 600;
                 // a tween to animate the arrow
                 this.scrollertween = new me.Tween(this).to({
@@ -51,10 +50,9 @@ game.GameOverScreen = me.ScreenObject.extend({
             },
 
             draw: function(renderer) {
-                this.font.draw(renderer, "PRESS ENTER TO BE RESTART!", 20, 240);
+                this.font.draw(renderer, "PRESS ENTER TO PLAY", 20, 240);
                 this.font.draw(renderer, this.scroller, this.scrollerpos, 440);
             },
-
             onDestroyEvent: function() {
                 //just in case
                 this.scrollertween.stop();
@@ -68,9 +66,9 @@ game.GameOverScreen = me.ScreenObject.extend({
             if (action === "enter") {
                 // play something on tap / enter
                 // this will unlock audio on mobile devices
-                me.audio.fade("dashBoardBGM",1,0,10);
+                me.audio.fade("death",1,0,10);
                 me.audio.play("cling");
-                me.state.change(me.state.PLAY);
+                me.state.change(me.state.MENU);
             }
         });
     },

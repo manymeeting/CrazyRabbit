@@ -133,7 +133,7 @@ game.PlayerEntity = me.Entity.extend({
         me.audio.fade("bgm2",1,0,10);
         me.audio.play("death", false, function() {
             // go back to menu on music ends
-            me.state.change(me.state.MENU);
+            me.state.change(me.state.GAMEOVER);
         });
     }
 });
