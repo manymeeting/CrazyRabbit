@@ -29,7 +29,8 @@ me.BasicEnemyEntity = me.Entity.extend({
     },
 
     onCollision: function(response, other) {
-        if (response.b.body.collisionType !== me.collision.types.WORLD_SHAPE) {
+        if (response.b.body.collisionType !== me.collision.types.WORLD_SHAPE &&
+            response.b.body.collisionType !== me.collision.types.COLLECTABLE_OBJECT) {
             // res.y > 0 means touched by something on the bottom
             if (this.alive && (response.overlapV.y > 0) && other.body.falling) {
                 // update other's status (implement it here to ensure the failing and jumping status haven't been affected by previous collision handling functions)
